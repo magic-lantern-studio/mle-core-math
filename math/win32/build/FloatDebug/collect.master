@@ -1,0 +1,2 @@
+#InstallBuilder Collection 1.0
+file lib/mlmath.lib win32/src/FloatDebug/mlmath.lib LIB

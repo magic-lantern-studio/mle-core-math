@@ -1,0 +1,13 @@
+#InstallBuilder Collection 1.0
+file include/math/angle.h common/include/math/angle.h INCLUDE
+file include/math/anglebr.h common/include/math/anglebr.h INCLUDE
+file include/math/asine.h common/include/math/asine.h INCLUDE
+file include/math/atan.h common/include/math/atan.h INCLUDE
+file include/math/recip.h common/include/math/recip.h INCLUDE
+file include/math/rotation.h common/include/math/rotation.h INCLUDE
+file include/math/scalar.h common/include/math/scalar.h INCLUDE
+file include/math/sine.h common/include/math/sine.h INCLUDE
+file include/math/sqrt.h common/include/math/sqrt.h INCLUDE
+file include/math/transfrm.h common/include/math/transfrm.h INCLUDE
+file include/math/trig.h common/include/math/trig.h INCLUDE
+file include/math/vector.h common/include/math/vector.h INCLUDE

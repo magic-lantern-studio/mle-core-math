@@ -1,0 +1,2 @@
+#InstallBuilder Collection 1.0
+file lib/mlfmath.lib win32/src/FixedRelease/mlfmath.lib LIB

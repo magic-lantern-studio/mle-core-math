@@ -1,0 +1,7 @@
+-sourcepath com.wizzer.mle.math/src
+-d com.wizzer.mle.math.doc
+-overview com.wizzer.mle.math/src/overview-summary.html
+-plugintitle 'Magic Lantern Math Library'
+-pluginid www.wizzer.mle.math.doc
+-version "1.0.0.0"
+-provider "Wizzer Works"

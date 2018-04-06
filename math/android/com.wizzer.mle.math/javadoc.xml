@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="protected" author="true" classpath="." destdir="doc" doctitle="Magic Lantern Runtime Library" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" overview="M:\projects\MagicLantern\Core\math\android\com.wizzer.mle.math\src\overview-summary.html" source="1.5" sourcefiles="src/com/wizzer/mle/math/MlScalar.java,src/com/wizzer/mle/math/MlVector3.java,src/com/wizzer/mle/math/MlAngle.java,src/com/wizzer/mle/math/MlTransform.java,src/com/wizzer/mle/math/MlVector4.java,src/com/wizzer/mle/math/MlMathTest.java,src/com/wizzer/mle/math/MlRotation.java,src/com/wizzer/mle/math/MlVector2.java" sourcepath="gen;src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

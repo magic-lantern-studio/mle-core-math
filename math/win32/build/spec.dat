@@ -1,0 +1,10 @@
+#InstallBuilder Spec 1.0
+
+product mlmath $ISM_VERSION $ISM_ALPHANUM
+	uiName Magic Lantern Math Library
+	defaultInstallDir MagicLantern
+	subsys base
+		uiName Magic Lantern Math Library Development
+		export LIB && INCLUDE
+	endsubsys
+endproduct
