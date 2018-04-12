@@ -23,7 +23,7 @@ exampleProgram_SOURCES = exampleProgram.cxx
 # Libraries for a.out
 exampleProgram_LDADD = $(top_srcdir)/libmlmathtest/libmlmathtest.la \
 	$(top_srcdir)/../libmlmath/libmlmath/libmlmath.la \
-	$(GTEST_DIR)/googletest/libgtest.a
+	$(GTEST_DIR)/libgtest.a
 
 # Linker options for a.out
 exampleProgram_LDFLAGS = \
@@ -36,7 +36,7 @@ exampleProgram_CPPFLAGS = \
 	-DMLMATH_EXPORTS \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/../../common/include \
-	-I$(top_srcdir)/../../../../Core/util/common/include \
-	-I$(top_srcdir)/../../../../Core/util/linux/include \
-	-I$(GTEST_DIR)/googletest/include
+	-I$(MLE_HOME)/Core/util/common/include \
+	-I$(MLE_HOME)/Core/util/linux/include \
+	-I$(GTEST_DIR)/include
 
