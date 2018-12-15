@@ -6,4 +6,4 @@ The math library contains classes for vectors with 2, 3 and 4 floating-point ele
 a 4x3 affine matrix of floating-point elements. The Math Library from the Magic Lantern project provides both
 floating-point and fixed-point utility.
 
-Instructions for generating the API documentation can be found on the [Math Library](https://github.com/magic-lantern-studio/mle-documentation/wiki/Math-Library) wiki page captured in the mle-documentation Github project.
+Instructions for generating the API documentation can be found on the [Math Library wiki](https://github.com/magic-lantern-studio/mle-documentation/wiki/Math-Library) page captured in the mle-documentation Github project.
