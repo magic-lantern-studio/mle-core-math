@@ -10,7 +10,7 @@ lib_LTLIBRARIES = libmlmathtest.la
 # Sources for libmlmathtest
 libmlmathtest_la_SOURCES = libmlmathtest.cxx \
 	testMlVector2.cxx testMlVector3.cxx testMlVector4.cxx \
-	testMlTransform.cxx
+	testMlTransform.cxx testMlRotation.cxx
 
 # Linker options libTestProgram
 libmlmathtest_la_LDFLAGS = 
