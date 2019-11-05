@@ -100,8 +100,8 @@ TEST(MlRotationTest, GetValue) {
     EXPECT_FLOAT_EQ(t[3][2], 0);
 }
 
-TEST(MlRotationTest, Multiplication) {
-    // This test is named "Multiplication", and belongs to the "MlRotationTest"
+TEST(MlRotationTest, Multiplication1) {
+    // This test is named "Multiplication1", and belongs to the "MlRotationTest"
     // test case.
 
     MlRotation *r = new MlRotation();
@@ -116,4 +116,22 @@ TEST(MlRotationTest, Multiplication) {
     EXPECT_FLOAT_EQ(q1, 0.9993880987167358);
     EXPECT_FLOAT_EQ(q2, 0.0);
     EXPECT_FLOAT_EQ(q3, 0.034978583455085754);
+}
+
+TEST(MlRotationTest, Multiplication2) {
+    // This test is named "Multiplication2", and belongs to the "MlRotationTest"
+    // test case.
+
+    MlRotation *r = new MlRotation();
+    EXPECT_TRUE(r != NULL);
+    r->setValue(0, 0, 0, 1);
+
+    MlRotation *delta = new MlRotation(MlVector3(ML_SCALAR_ZERO, ML_SCALAR_ONE, ML_SCALAR_ZERO), 0.035f);
+    *r *= *delta;
+    MlScalar q0, q1, q2, q3;
+    r->getValue(q0, q1, q2, q3);
+    EXPECT_FLOAT_EQ(q0, 0.0);
+    EXPECT_FLOAT_EQ(q1, 0.017499107867479324);
+    EXPECT_FLOAT_EQ(q2, 0.0);
+    EXPECT_FLOAT_EQ(q3, 0.9998469948768616);
 }
