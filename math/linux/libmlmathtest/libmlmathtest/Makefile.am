@@ -25,4 +25,5 @@ libmlmathtest_la_CPPFLAGS = \
 	-I$(top_srcdir)/../../common/include \
 	-I$(MLE_HOME)/Core/util/common/include \
 	-I$(MLE_HOME)/Core/util/linux/include \
-	-I$(GTEST_DIR)/include
+	-I/usr/local/include \
+	-std=c++11
