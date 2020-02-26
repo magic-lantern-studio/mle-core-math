@@ -785,7 +785,8 @@ INPUT                  = ../../../../../MagicLanternStudio/Core/math/common/incl
                          /home/msm/Projects/MagicLanternStudio/Core/math/common/src \
                          /home/msm/Projects/MagicLanternStudio/Core/util/common/include/mle/mlAssert.h \
                          /home/msm/Projects/MagicLanternStudio/Core/util/common/include/mle/mlTypes.h \
-                         /home/msm/Projects/MagicLanternStudio/Core/math/common/include/math
+                         /home/msm/Projects/MagicLanternStudio/Core/math/common/include/math \
+                         /home/msm/Projects/MagicLanternStudio/Core/math/common/doc/mainpage.dox
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
