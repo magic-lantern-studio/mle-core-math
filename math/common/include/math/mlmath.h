@@ -1,4 +1,10 @@
-/** @defgroup MlMath Magic Lantern Math Library API */
+/**
+ * @defgroup MlMath Magic Lantern Math Library API
+ * @brief Math library providing scalar and 3d math algorithms.
+ *
+ * The Magic Lantern math library module is comprised of components
+ * offering both Fixed-point and Floating-point arithmetic.
+ */
 
 /**
  * @file mlmath.h
@@ -91,11 +97,19 @@
  * It is extremely important that the application programmer uses the
  * correct define, as using "MLE_NOT_DLL" when "MLE_DLL" is
  * correct is likely to cause mysterious crashes.
+ * </p><p>
+ * Detailed build instructions for the Windows target platform may be
+ * found on the Github project wiki at https://github.com/magic-lantern-studio/mle-documentation/wiki/SDK-Build-Environment-using-Microsoft-Visual-Studio#build-the-core-math-libraries.
  * </p>
  *
  * \section linux_build Building for Linux
  * <p>
- * Instructions for building on this platform are forthcoming.
+ * Currently, only the floating-point soluton is available for the linux
+ * target platform. The libraries, a static library and a DSO, are
+ * installed in the MLE_ROOT/lib directory.
+ * </p><p>
+ * Detailed build instructions for the Linux target platform may be
+ * found on the Github project wiki at https://github.com/magic-lantern-studio/mle-documentation/wiki/SDK-Build-Environment-for-Linux-Platform#build-the-core-math-libraries.
  * </p>
  */
 
@@ -103,7 +117,7 @@
 //
 // The MIT License (MIT)
 //
-// Copyright (c) 2015 Wizzer Works
+// Copyright (c) 2015-2020 Wizzer Works
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
