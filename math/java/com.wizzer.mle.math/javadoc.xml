@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project default="javadoc">
     <target name="javadoc">
-        <javadoc access="package" author="true" classpath="." destdir="M:\Projects\MagicLantern\Core\math\java\com.wizzer.mle.math\doc" doctitle="Magic Lantern Runtime Library" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" overview="C:\Users\msm\Projects\MagicLantern\Core\math\java\com.wizzer.mle.math\src\overview-summary.html" packagenames="com.wizzer.mle.math" source="1.8" sourcepath="src" splitindex="true" use="true" version="true"/>
+        <javadoc access="package" author="true" classpath="." destdir="doc" doctitle="Magic Lantern Runtime Library" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" overview="M:\Projects\Github-MagicLantern\mle-core-math\math\java\com.wizzer.mle.math\src\overview-summary.html" packagenames="com.wizzer.mle.math" source="1.8" sourcepath="src" splitindex="true" use="true" version="true"/>
     </target>
 </project>
