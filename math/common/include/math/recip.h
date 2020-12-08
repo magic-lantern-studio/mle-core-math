@@ -4,9 +4,6 @@
  * @file recip.h
  * @ingroup MlMath
  *
- * @author Mark S. Millard
- * @date Jan 24, 2006
- *
  * This file contains the utilities for computing the reciprocal of
  * a Magic Lantern scalar primitive.
  */
@@ -15,7 +12,7 @@
 //
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-202 Wizzer Works
+// Copyright (c) 2015-2020 Wizzer Works
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal

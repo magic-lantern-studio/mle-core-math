@@ -4,9 +4,6 @@
  * @file atan.h
  * @ingroup MlMath
  *
- * @author Mark S. Millard
- * @date Jan 24, 2006
- *
  * This file contains the utilities for computing the arc tangent of
  * a Magic Lantern scalar primitive.
  */
@@ -53,17 +50,6 @@
 #include <math/scalar.h>
 #include <math/angle.h>
 
-#if !defined(__sgi)
-// XXX - on platforms that don't have single-precision float
-// trig functions, use the double versions, at least for now.
-// See also scalar.h
-
-//#define atanf(x) ((float)atan((double)(x)))
-//#define fatan(x) ((float)atan((double)(x)))
-//#define atan2f(y,x) ((float)atan2((double)(y),(double)(x)))
-//#define fatan2(y,x) ((float)atan2((double)(y),(double)(x)))
-
-#endif /* !defined(__sgi) */
 
 #if ML_FIXED_POINT
 // Debugging stuff for now.

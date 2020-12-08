@@ -4,9 +4,6 @@
  * @file scalar.h
  * @ingroup MlMath
  *
- * @author Mark S. Millard
- * @date Jan 24, 2006
- *
  * This file contains the utilities and definitions for the Magic Lantern
  * Scalar primitive, <b>MlScalar</b>.
  *
@@ -102,12 +99,12 @@
 // So here we're doing the wrong kind of rounding on the PC and others.
 // And the substitute for truncf is a double kludge.
 
-#if !defined(__sgi) && !defined(__linux__)
+#if !defined(__linux__) && !defined(__APPLE__)
 //#define sqrtf(x) ((float)sqrt((double)(x)))
 //#define ceilf(x) ((float)ceil((double)(x)))
 //#define floorf(x) ((float)floor((double)(x)))
 #define truncf(x) ((float)floor((double)(x)))
-#endif /* !defined(__sgi) */
+#endif /* !defined(__linux__) */
 
 // Setup for Magic Lantern generic parameter MlScalar 
 
@@ -117,8 +114,8 @@
 // is now not the default.  You must ask for it.
 
 #if !defined(ML_FIXED_POINT)
-#if defined(__sgi) || defined(__linux__)
-#define ML_FIXED_POINT 0      // default for SGI is not FIXED
+#if defined(__linux__) || defined(__APPLE__)
+#define ML_FIXED_POINT 0      // default for Linux and MAcOS is not FIXED
 #elif defined(WIN32)    
 #define ML_FIXED_POINT 1      // default for PC is FIXED
 #elif defined(psx)   

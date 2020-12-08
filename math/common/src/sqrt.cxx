@@ -1386,7 +1386,7 @@ FixedRecipSqrt(const MlScalar val)
     return FixedDivide(ML_SCALAR_ONE, FixedSqrt(val));
 }
 
-#endif
+#endif /* ML_FIXED_POINT */
 
 //////////////////////////////////////////////////////////////////////////
 //  Write out the lookup table for use in fixed point sqrt computations.

@@ -4,9 +4,6 @@
  * @file sine.h
  * @ingroup MlMath
  *
- * @author Mark S. Millard
- * @date Jan 24, 2006
- *
  * This file contains the utilities for computing the sine and cosine of
  * a Magic Lantern scalar primitive.
  */

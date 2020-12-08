@@ -4,9 +4,6 @@
  * @file angle.h
  * @ingroup MlMath
  *
- * @author Mark S. Millard
- * @date Jan 24, 2006
- *
  * This file contains utilities for doing conversions to angles, which use 2PI == 0x10000
  * in fixed-point mode and regular floating-point values in float mode.
  */

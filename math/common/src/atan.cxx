@@ -600,4 +600,4 @@ int main ()
 
 #endif
 
-#endif
+#endif /* ML_FIXED_POINT */

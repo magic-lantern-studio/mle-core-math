@@ -4,9 +4,6 @@
  * @file vector.h
  * @ingroup MlMath
  *
- * @author Mark S. Millard
- * @date Jan 24, 2006
- *
  * This file provides utility for vectors. The vectors are
  *
  * <li>

@@ -4,9 +4,6 @@
  * @file asine.h
  * @ingroup MlMath
  *
- * @author Mark S. Millard
- * @date Jan 24, 2006
- *
  * This file contains the utilities for computing the arc sine and arc cosine of
  * a Magic Lantern scalar primitive.
  */
@@ -52,18 +49,6 @@
 #include <math/mlmath.h>
 #include <math/scalar.h>
 #include <math/angle.h>
-
-#if !defined(__sgi)
-// XXX - on platforms that don't have single-precision float
-// trig functions, use the double versions, at least for now.
-// See also scalar.h
-
-//#define acosf(x) ((float)acos((double)(x)))
-//#define facos(x) ((float)acos((double)(x)))
-//#define asinf(x) ((float)asin((double)(x)))
-//#define fasin(x) ((float)asin((double)(x)))
-
-#endif /* !defined(__sgi) */
 
 #if ML_FIXED_POINT
 // Debugging stuff for now.

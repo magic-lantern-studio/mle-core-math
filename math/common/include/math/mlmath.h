@@ -9,10 +9,6 @@
 /**
  * @file mlmath.h
  * @ingroup MlMath
- *
- * @author Mark S. Millard
- * @date Jan 24, 2006
- *
  */
 
 // COPYRIGHT_BEGIN
