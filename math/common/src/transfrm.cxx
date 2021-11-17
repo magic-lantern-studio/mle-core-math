@@ -3,7 +3,7 @@
 //
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2020 Wizzer Works
+// Copyright (c) 2015-2021 Wizzer Works
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -44,15 +44,13 @@
 #include "math/transfrm.h"
 
 
-//
 // Handy absolute value macro:
-//
+
 #define ABS(a) ((a) < ML_SCALAR_ZERO ? -(a) : (a))
 
 
-//
 // Macro for checking if a matrix is idenity or zero.
-//
+
 #define IS_IDENTITY(matrix) ( \
     (matrix[0][0] == ML_SCALAR_ONE) && \
     (matrix[0][1] == ML_SCALAR_ZERO) && \
@@ -82,13 +80,34 @@
     (matrix[3][2] == ML_SCALAR_ZERO))
 
 
+// Copy constructor.
+
+MlTransform::MlTransform(const MlTransform &trans)
+{
+    matrix.m[0][0] = trans.matrix.m[0][0];
+    matrix.m[0][1] = trans.matrix.m[0][1];
+    matrix.m[0][2] = trans.matrix.m[0][2];
+
+    matrix.m[1][0] = trans.matrix.m[1][0];
+    matrix.m[1][1] = trans.matrix.m[1][1];
+    matrix.m[1][2] = trans.matrix.m[1][2];
+
+    matrix.m[2][0] = trans.matrix.m[2][0];
+    matrix.m[2][1] = trans.matrix.m[2][1];
+    matrix.m[2][2] = trans.matrix.m[2][2];
+
+    matrix.m[3][0] = trans.matrix.m[3][0];
+    matrix.m[3][1] = trans.matrix.m[3][1];
+    matrix.m[3][2] = trans.matrix.m[3][2];
+}
+
+
+// Constructor given all 12 elements in row-major order.
+
 MlTransform::MlTransform(MlScalar a11, MlScalar a12, MlScalar a13, 
                          MlScalar a21, MlScalar a22, MlScalar a23, 
                          MlScalar a31, MlScalar a32, MlScalar a33, 
                          MlScalar a41, MlScalar a42, MlScalar a43)
-//
-// Constructor given all 12 elements in row-major order
-//
 {
     matrix.m[0][0] = a11;
     matrix.m[0][1] = a12;
@@ -108,10 +127,10 @@ MlTransform::MlTransform(MlScalar a11, MlScalar a12, MlScalar a13,
 }
 
 
+// Constructor from a 4x3 array of float elements.
+
 MlTransform::MlTransform(const MlTrans &m)
-//
-// Constructor from a 4x3 array of float elements
-//
+
 {
     matrix.m[0][0] = m.m[0][0];
     matrix.m[0][1] = m.m[0][1];
@@ -128,12 +147,11 @@ MlTransform::MlTransform(const MlTrans &m)
 }
 
 
-MlTransform::MlTransform(MlScalar m[4][4])
-//
-// Constructor from a 4x4 array of double elements 
+// Constructor from a 4x4 array of double elements .
 // Warning: The input better be an affine matrix (with last column
 //          being 0,0,0,1) because this last column is thrown away!
-//
+
+MlTransform::MlTransform(MlScalar m[4][4])
 {
     matrix.m[0][0] = m[0][0];
     matrix.m[0][1] = m[0][1];
@@ -150,11 +168,9 @@ MlTransform::MlTransform(MlScalar m[4][4])
 }
 
 
+// Constructor from a 4x3 array of double elements.
 
 MlTransform::MlTransform(MlScalar m[4][3])
-//
-// Constructor from a 4x3 array of double elements
-//
 {
     matrix.m[0][0] = m[0][0];
     matrix.m[0][1] = m[0][1];
@@ -177,10 +193,10 @@ MlTransform::MlTransform(MlScalar m[4][3])
 //
 ////////////////////////////////////////////
 
+
+// Sets value from 4x3 array of elements.
+
 void MlTransform::setValue(const MlTrans &m)
-//
-// Sets value from 4x3 array of elements
-//
 {
     matrix.m[0][0] = m.m[0][0];
     matrix.m[0][1] = m.m[0][1];
@@ -197,28 +213,25 @@ void MlTransform::setValue(const MlTrans &m)
 }
 
 
-
 ////////////////////////////////////////////
 //
 // Operators
 //
 ////////////////////////////////////////////
 
+
+// Sets value from 4x3 array of elements.
+
 MlTransform& MlTransform::operator =(const MlTrans &m)
-//
-// Sets value from 4x3 array of elements
-//
 {
     setValue(m);
     return *this;
 }
 
 
+// Assignment operator.
+
 MlTransform& MlTransform::operator =(const MlTransform &m)
-//
-// ??? why do we need to write this out like this?
-// ??? it doesn't seem to work otherwise, but why not?
-//
 {
     matrix.m[0][0] = m.matrix.m[0][0];
     matrix.m[0][1] = m.matrix.m[0][1];
@@ -237,10 +250,10 @@ MlTransform& MlTransform::operator =(const MlTransform &m)
 }
 
 
+// Binary multiplication of matrices.
+
 MlTransform operator *(const MlTransform &l, const MlTransform &r)
-//
-// Binary multiplication of matrices
-//
+
 {
     MlTransform m = l;
     
@@ -250,10 +263,9 @@ MlTransform operator *(const MlTransform &l, const MlTransform &r)
 }
 
 
-int operator ==(const MlTransform &m1, const MlTransform &m2)
-//
 // Equality comparison operator. All componenents must match exactly.
-//
+
+int operator ==(const MlTransform &m1, const MlTransform &m2)
 {
     return (m1.matrix.m[0][0] == m2.matrix.m[0][0] &&
             m1.matrix.m[0][1] == m2.matrix.m[0][1] &&
@@ -270,10 +282,9 @@ int operator ==(const MlTransform &m1, const MlTransform &m2)
 }
 
 
+// Returns 4x3 array of elements.
+
 void MlTransform::getValue(MlTrans &m) const
-//
-// Returns 4x3 array of elements
-//
 {
     m.m[0][0] = matrix.m[0][0];
     m.m[0][1] = matrix.m[0][1];
@@ -303,10 +314,9 @@ void MlTransform::print(FILE *fp) const
 #endif
 
 
+// Equality comparison operator within given tolerance for each component.
+
 int MlTransform::equals(const MlTransform &m, MlScalar tolerance) const
-//
-// Equality comparison operator within given tolerance for each component
-//
 {
     int i, j;
     MlScalar d;
@@ -322,10 +332,9 @@ int MlTransform::equals(const MlTransform &m, MlScalar tolerance) const
 }
 
 
+// Return an identity matrix.
+
 MlTransform MlTransform::identity()    
-//
-// Return an identity matrix
-//
 {
     return MlTransform(ML_SCALAR_ONE, ML_SCALAR_ZERO, ML_SCALAR_ZERO,
                        ML_SCALAR_ZERO, ML_SCALAR_ONE, ML_SCALAR_ZERO, 
@@ -334,10 +343,9 @@ MlTransform MlTransform::identity()
 }
 
 
+// Sets matrix to be identity,.
+
 void MlTransform::makeIdentity()
-//
-// Sets matrix to be identity
-//
 {
     matrix.m[0][0] = ML_SCALAR_ONE;
     matrix.m[0][1] = ML_SCALAR_ZERO;
@@ -354,25 +362,25 @@ void MlTransform::makeIdentity()
 }
 
 
-// Returns whether matrix is identity
+// Returns whether matrix is identity.
+
 int MlTransform::isIdentity() const
 {
     return IS_IDENTITY(matrix.m);
 }
 
 
-// Returns whether matrix is all zeros
+// Returns whether matrix is all zeros.
+
 int MlTransform::isZero() const
 {
     return IS_ZERO(matrix.m);
 }
 
 
+// Returns determinant of 3x3 submatrix composed of given row indices (0-3).
 
 MlScalar MlTransform::det3(int r1, int r2, int r3) const
-//
-// Returns determinant of 3x3 submatrix composed of given row indices (0-3).
-//
 {
     return (mlMulMul(matrix.m[r1][0], matrix.m[r2][1], matrix.m[r3][2])
          +  mlMulMul(matrix.m[r1][1], matrix.m[r2][2], matrix.m[r3][0])
@@ -383,25 +391,21 @@ MlScalar MlTransform::det3(int r1, int r2, int r3) const
 }
 
 
+// Returns determinant of upper-left 3x3 matrix.
+
 MlScalar MlTransform::det() const
-//
-// Returns determinant of upper-left 3x3 matrix
-//
 {
     return (det3(0, 1, 2));
 }
 
 
-int MlTransform::factor(MlTransform &r, MlVector3& s,
-                        MlTransform &u, MlVector3& t,
-                        MlTransform &proj) const
-//
-// Factors a matrix m into 5 pieces: m = r s r^ u t, where r^
-// means transpose of r, and r and u are rotations, s is a scale,
-// and t is a translation. Any projection information is returned
-// in proj.
-//
 /*
+ * Factors a matrix m into 5 pieces: m = r s r^ u t, where r^
+ * means transpose of r, and r and u are rotations, s is a scale,
+ * and t is a translation. Any projection information is returned
+ * in proj.
+ *
+ *
  * Variable declarations from the original source:
  *
  * n    : order of matrix A
@@ -416,6 +420,9 @@ int MlTransform::factor(MlTransform &r, MlVector3& s,
  *        eigenvalue d[k].
  * rot  : The number of jacobi rotations required to perform the operation.
  */
+int MlTransform::factor(MlTransform &r, MlVector3& s,
+                        MlTransform &u, MlVector3& t,
+                        MlTransform &proj) const
 {
     MlScalar    det;        /* Determinant of matrix A    */
     MlScalar    det_sign;    /* -1 if det < 0, 1 if det > 0    */
@@ -470,11 +477,10 @@ int MlTransform::factor(MlTransform &r, MlVector3& s,
 }
 
 
+// Diagonalizes 3x3 matrix. See comment for factor().
+
 void MlTransform::jacobi3(MlScalar evalues[3],
                   MlVector3 evectors[3], int &rots) const
-//
-// Diagonalizes 3x3 matrix. See comment for factor().
-//
 {
     MlScalar    sm;       // smallest entry
     MlScalar    theta;    // angle for Jacobi rotation
@@ -499,7 +505,7 @@ void MlTransform::jacobi3(MlScalar evalues[3],
     
     rots = 0;
 
-    // Why 50? I don't know--it's the way the folks who wrote the
+    // Why 50? I don't know -- it's the way the folks who wrote the
     // algorithm did it:
     for (i = 0; i < 50; i++) {
         sm = ML_SCALAR_ZERO;
@@ -588,19 +594,18 @@ void MlTransform::jacobi3(MlScalar evalues[3],
 }
 
 
-MlTransform MlTransform::inverse() const
 // The following method finds the inverse of an affine matrix.
 // The last column MUST be [0 0 0 1] for this to work.
 // This is taken from graphics gems 2, page 603
 //
-// computes the inverse of a 3d affine matrix; i.e. a matrix with a 
+// computes the inverse of a 3d affine matrix; i.e. a matrix with a
 // dimensionality of 4 where the right column has the entries (0,0,0,1).
 //
 // This procedure treats the 4 by 4 matrix as a block matrix and calculates
-// the inverse of one submatrix for a significant performance 
+// the inverse of one submatrix for a significant performance
 // improvement over a general procedure that can invert any nonsingular matrix.
 //
-//             -1 
+//             -1
 //  -1   |    |      |  -1    |
 // M   = |A  0|  =   | A     0|
 //       |    |      |        |
@@ -617,6 +622,7 @@ MlTransform MlTransform::inverse() const
 // Returned Value:
 //   inverse matrix if input matrix is nonsingular and affine
 //   unchanged otherwise
+MlTransform MlTransform::inverse() const
 {
     // Trivial case
     if (IS_IDENTITY(matrix.m))
@@ -690,11 +696,9 @@ MlTransform MlTransform::inverse() const
 }
 
 
+// Returns transpose of matrix.
 
 MlTransform MlTransform::transpose() const
-//
-// Returns transpose of matrix
-//
 {
     return MlTransform(matrix.m[0][0], matrix.m[1][0], matrix.m[2][0], 
                        matrix.m[0][1], matrix.m[1][1], matrix.m[2][1], 
@@ -703,17 +707,16 @@ MlTransform MlTransform::transpose() const
 }
 
 
-
 ////////////////////////////////////////////
 //
 // Matrix/matrix and matrix/vector arithmetic
 //
 ////////////////////////////////////////////
 
+
+// Multiplies matrix by given matrix on right.
+
 MlTransform& MlTransform::multRight(const MlTransform &m)
-//
-// Multiplies matrix by given matrix on right
-//
 {
     // Trivial cases
     if (IS_IDENTITY(m.matrix.m))
@@ -752,10 +755,9 @@ MlTransform& MlTransform::multRight(const MlTransform &m)
 }
 
 
+// Multiplies matrix by given matrix on left.
+
 MlTransform& MlTransform::multLeft(const MlTransform &m)
-//
-// Multiplies matrix by given matrix on left
-//
 {
     // Trivial cases
     if (IS_IDENTITY(m.matrix.m))
@@ -765,7 +767,7 @@ MlTransform& MlTransform::multLeft(const MlTransform &m)
     
     MlTrans tmp;
 
-//Here we know last column entries are 0.0
+// Here we know last column entries are 0.0
 #define MULT_LEFT(i,j) (mlMul(m.matrix.m[i][0], matrix.m[0][j]) + \
                         mlMul(m.matrix.m[i][1], matrix.m[1][j]) + \
                         mlMul(m.matrix.m[i][2], matrix.m[2][j]))
@@ -781,8 +783,7 @@ MlTransform& MlTransform::multLeft(const MlTransform &m)
     tmp.m[2][2] = MULT_LEFT(2,2);
 #undef MULT_LEFT
 
-
-//Here we know last column entry is 1.0
+// Here we know last column entry is 1.0
 #define MULT_LEFT_1(i,j) (mlMul(m.matrix.m[i][0], matrix.m[0][j]) + \
                           mlMul(m.matrix.m[i][1], matrix.m[1][j]) + \
                           mlMul(m.matrix.m[i][2], matrix.m[2][j]) + \
@@ -793,14 +794,12 @@ MlTransform& MlTransform::multLeft(const MlTransform &m)
 #undef MULT_LEFT_1
 
     return (*this = tmp);
-
 }
 
 
-void MlTransform::multMatrixVec(const MlVector3& src, MlVector3& dst) const
-//
 // Multiplies matrix by given column vector, giving vector result
-//
+
+void MlTransform::multMatrixVec(const MlVector3& src, MlVector3& dst) const
 {
     MlScalar x,y,z;
     
@@ -820,10 +819,9 @@ void MlTransform::multMatrixVec(const MlVector3& src, MlVector3& dst) const
 }
 
 
-void MlTransform::multVecMatrix(const MlVector3& src, MlVector3& dst) const
-//
 // Multiplies given row vector by matrix, giving vector result
-//
+
+void MlTransform::multVecMatrix(const MlVector3& src, MlVector3& dst) const
 {
     MlScalar x,y,z;
     
@@ -844,12 +842,11 @@ void MlTransform::multVecMatrix(const MlVector3& src, MlVector3& dst) const
 }
 
 
-void MlTransform::multDirMatrix(const MlVector3& src, MlVector3& dst) const
-//
 // Multiplies given row vector by matrix, giving vector result
 // src is assumed to be a direction vector, so translation part of
 // matrix is ignored.
-//
+
+void MlTransform::multDirMatrix(const MlVector3& src, MlVector3& dst) const
 {
     MlScalar x,y,z;
     
@@ -867,19 +864,20 @@ void MlTransform::multDirMatrix(const MlVector3& src, MlVector3& dst) const
 //
 //////////////////////////////////////////////////////////////////
 
+
+// Sets the given translation vector to the X,Y,Z translations contained
+// in the given transformation matrix.
+
 void MlTransform::getTranslation(MlVector3& translation)
-//Sets the given translation vector to the X,Y,Z translations contained 
-//in the given transformation matrix
 { 
   for (int i=0;i<3;i++)
       translation[i]=matrix.m[3][i];
 }
 
 
+// Sets matrix to the translation matrix given by the vector.
+
 void MlTransform::setTranslation(const MlVector3 newTranslation)
-//
-// Sets matrix to the translation matrix given by the vector
-//
 {
     matrix.m[0][0] = ML_SCALAR_ONE;
     matrix.m[0][1] = ML_SCALAR_ZERO;
@@ -896,18 +894,19 @@ void MlTransform::setTranslation(const MlVector3 newTranslation)
 }
 
 
+// Sets the translation of the given transform to the X,Y,Z translations
+// contained in the given new translation vector.
 void MlTransform::setTranslationOnly(const MlVector3 translation)
-//Sets the translation of the given transform to the X,Y,Z translations 
-//contained in the given new translation vector
 {
     for (int i=0;i<3;i++)
         matrix.m[3][i]=translation[i];
 }
 
 
+// Adds the given X,Y,Z translations to the existing translation
+// contained in the transform.
+
 void MlTransform::applyTranslation(const MlVector3 translation)
-//Adds the given X,Y,Z translations to the existing translation
-//contained in the transform
 {
     for (int i=0;i<3;i++)
         matrix.m[3][i]+=translation[i];
@@ -920,19 +919,19 @@ void MlTransform::applyTranslation(const MlVector3 translation)
 //
 //////////////////////////////////////////////////////////////////
 
+
+// Gets the quaternion rotation from the matrix
+
 void MlTransform::getRotation(MlRotation& rotation)
-//
-// Gets the quaternion rotation from the matrix 
-//
 {
     rotation.setValue(*this);
 }
 
 
+// Gets the the X,Y,Z fixed rotations from the transformation matrix
+// and returns it in the given rotation vector .
+// Note: normalizes angles to positive degrees.
 void MlTransform::getRotation(MlVector3& rotation)
-//Gets the the X,Y,Z fixed rotations from the transformation matrix  
-//and returns it in the given rotation vector 
-//Note: normalizes angles to positive degrees
 { 
     MlTransform t;
     int i,j;
@@ -973,18 +972,17 @@ void MlTransform::getRotation(MlVector3& rotation)
 }
 
 
+// Sets matrix to the rotate matrix given the rotation.
+
 void MlTransform::setRotation(const MlRotation newRotation)
-//
-// Sets matrix to the rotate matrix given the rotation
-//
 {
     newRotation.getValue(*this);
 }
 
 
+// Sets the rotation matrix of the given transform to the X,Y,Z fixed rotations
+// contained in the given new rotation vector.
 void MlTransform::setRotationOnly(const MlRotation rotation)
-//Sets the rotation matrix of the given transform to the X,Y,Z fixed rotations
-//contained in the given new rotation vector
 {
     MlVector3 translation,scale;
     getTranslation(translation);
@@ -994,9 +992,9 @@ void MlTransform::setRotationOnly(const MlRotation rotation)
 }
 
 
+// Sets the rotation matrix of the given transform to the X,Y,Z fixed rotations
+// contained in the given new rotation vector.
 void MlTransform::setRotationOnly(const MlVector3 rotation)
-//Sets the rotation matrix of the given transform to the X,Y,Z fixed rotations
-//contained in the given new rotation vector
 {
     MlVector3 translation,scale;
 
@@ -1006,9 +1004,10 @@ void MlTransform::setRotationOnly(const MlVector3 rotation)
     setTransform(translation, rotation, scale);
 }
 
+
+// Applies the quaternion rotation to the matrix.
 
 void MlTransform::applyRotation(const MlRotation rotation)
-//Applies the quaternion rotation to the matrix
 {
     MlTransform mat; 
 
@@ -1017,13 +1016,14 @@ void MlTransform::applyRotation(const MlRotation rotation)
 }
 
 
+// Applies the fixed angle rotation to the matrix.
+
 void MlTransform::applyRotation(const MlVector3 rotation)
-//Applies the fixed angle rotation to the matrix
 {
     MlTransform mat; 
     mat.makeIdentity();
 
-    //Apply Z Rotation
+    // Apply Z Rotation
     if (rotation[2]!=ML_SCALAR_ZERO) {
         MlScalar angle = mlDegreesToAngle(rotation[2]);
         MlScalar sz=mlSin(angle);
@@ -1038,7 +1038,7 @@ void MlTransform::applyRotation(const MlVector3 rotation)
         multRight(mat);
     }
 
-    //Apply Y Rotation
+    // Apply Y Rotation
     if (rotation[1]!=ML_SCALAR_ZERO) {
         MlScalar angle = mlDegreesToAngle(rotation[1]);
         MlScalar sy=mlSin(angle);
@@ -1053,7 +1053,7 @@ void MlTransform::applyRotation(const MlVector3 rotation)
         multRight(mat);
      }
 
-    //Apply X Rotation
+    // Apply X Rotation
     if (rotation[0]!=ML_SCALAR_ZERO) {
         MlScalar angle = mlDegreesToAngle(rotation[0]);
         MlScalar sx=mlSin(angle);
@@ -1070,7 +1070,6 @@ void MlTransform::applyRotation(const MlVector3 rotation)
 }
 
 
-
 //////////////////////////////////////////////////////////////////
 //
 // Miscellaneous get/set convenience routines for scales
@@ -1078,9 +1077,10 @@ void MlTransform::applyRotation(const MlVector3 rotation)
 //////////////////////////////////////////////////////////////////
 
 
-void MlTransform::getScale(MlVector3& scale)
 // Given a transformation matrix returns a vector containing
-// the X,Y,Z nonuniform scales
+// the X,Y,Z nonuniform scales.
+
+void MlTransform::getScale(MlVector3& scale)
 {
     for (int i=0;i<3;i++)
         scale[i]=mlSqrt(mlMul(matrix.m[i][0],
@@ -1089,10 +1089,9 @@ void MlTransform::getScale(MlVector3& scale)
 }
 
 
+// Sets matrix to scale by given uniform factor.
+
 void MlTransform::setScale(MlScalar newScale)
-//
-// Sets matrix to scale by given uniform factor
-//
 {
     matrix.m[0][0] = newScale;
     matrix.m[0][1] = ML_SCALAR_ZERO;
@@ -1109,10 +1108,9 @@ void MlTransform::setScale(MlScalar newScale)
 }
 
 
+// Sets matrix to scale by given vector.
+
 void MlTransform::setScale(const MlVector3 newScale)
-//
-// Sets matrix to scale by given vector
-//
 {
     matrix.m[0][0] = newScale[0];
     matrix.m[0][1] = ML_SCALAR_ZERO;
@@ -1129,9 +1127,10 @@ void MlTransform::setScale(const MlVector3 newScale)
 }
 
 
+// Sets the scales of the given transform to the X,Y,Z nonuniform scales
+// contained in the given new scale vector.
+
 void MlTransform::setScaleOnly(const MlVector3 scale)
-//Sets the scales of the given transform to the X,Y,Z nonuniform scales
-//contained in the given new scale vector
 {
     MlVector3 translation,rotation;
     getTranslation(translation);
@@ -1146,14 +1145,14 @@ void MlTransform::setScaleOnly(const MlVector3 scale)
 //
 //////////////////////////////////////////////////////////////////
 
+
+// Decomposes a rotation into translation etc, based on scale.
+
 void MlTransform::getTransform(MlVector3& translation,
                                MlRotation &rotation,
                                MlVector3& scaleFactor,
                                MlRotation &scaleOrientation,
                                const MlVector3& center) const
-//
-// Decomposes a rotation into translation etc, based on scale
-//
 {
     MlTransform so, rot, proj;
     if (center != MlVector3(ML_SCALAR_ZERO,ML_SCALAR_ZERO,ML_SCALAR_ZERO)) {
@@ -1179,14 +1178,13 @@ void MlTransform::getTransform(MlVector3& translation,
 }
 
 
+// Composes the matrix from translation, rotation, scale, etc.
+
 void MlTransform::setTransform(const MlVector3& translation,
                                const MlRotation &rotation,
                                const MlVector3& scaleFactor,
                                const MlRotation &scaleOrientation,
                                const MlVector3& center)
-//
-// Composes the matrix from translation, rotation, scale, etc.
-//
 {
 #define TRANSLATE(vec) m.setTranslation(vec), multLeft(m)
 #define ROTATE(rot)    rot.getValue(m), multLeft(m)
@@ -1226,12 +1224,13 @@ void MlTransform::setTransform(const MlVector3& translation,
 }
 
 
+// Sets the given transform to the matrix constructed from the given
+// translation, fixed angle rotation, and scale vectors.
+// Note** Uses scale - rotate - translate order with rotation order Z-Y-X.
+
 void MlTransform::setTransform(const MlVector3 translation,
                                const MlVector3 rotation,
                                const MlVector3 scale)
-//Sets the given transform to the matrix constructed from the given 
-//translation, fixed angle rotation, and scale vectors
-//Note** Uses scale - rotate - translate order with rotation order Z-Y-X
 {
     MlTransform mat;
 
@@ -1242,12 +1241,13 @@ void MlTransform::setTransform(const MlVector3 translation,
 }
 
 
+// Sets the given transform to the matrix constructed from the given
+// translation, fixed angle rotation, and nonuniformScale*scale vectors
+// Note** Uses scale - rotate - translate order with rotation order Z-Y-X.
+
 void MlTransform::setTransform(const MlVector3 translation,
                                const MlVector3 rotation, 
                                const MlVector3 nonuniformScale, MlScalar scale)
-//Sets the given transform to the matrix constructed from the given 
-//translation, fixed angle rotation, and nonuniformScale*scale vectors
-//Note** Uses scale - rotate - translate order with rotation order Z-Y-X
 {
     MlVector3 newScale;
     for (int i=0;i<3;i++)

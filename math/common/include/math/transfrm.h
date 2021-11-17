@@ -11,7 +11,7 @@
 //
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2020 Wizzer Works
+// Copyright (c) 2015-2021 Wizzer Works
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -92,8 +92,15 @@ class MLMATH_API MlTransform
     
     /**
 	 * Default constructor.
-	  */
+     */
     MlTransform() {}
+
+    /**
+     * @brief Copy constructor.
+     *
+     * @param trans The other transform to copy from.
+     */
+    MlTransform(const MlTransform &trans);
     
     /**
 	 * @brief A constructor given all 12 elements in row-major order.

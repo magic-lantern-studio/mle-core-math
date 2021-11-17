@@ -11,7 +11,7 @@
 //
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2020 Wizzer Works
+// Copyright (c) 2015-2021 Wizzer Works
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -64,6 +64,13 @@ class MLMATH_API MlRotation
 	 * Default constructor.
 	 */
     MlRotation() {}
+
+    /**
+     * @brief Copy constructor.
+     *
+     * @param rot The other rotation to copy from.
+     */
+    MlRotation(const MlRotation &rot);
 
     /**
 	 * @brief A constructor given a quaternion as an array of 4 components.
@@ -239,6 +246,13 @@ class MLMATH_API MlRotation
 	 */
     MlRotation &setValue(const MlVector3& rotateFrom,
                          const MlVector3& rotateTo);
+
+    /**
+     * @brief Assignment operator.
+     *
+     * Sets the value of the rotation from another rotation.
+     */
+    MlRotation &operator = (const MlRotation& r);
 
 	/**
      * @brief Accesses indexed component of quaternion.

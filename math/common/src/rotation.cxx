@@ -3,7 +3,7 @@
 //
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2020 Wizzer Works
+// Copyright (c) 2015-2021 Wizzer Works
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -42,6 +42,15 @@
 #include "math/vector.h"
 #include "math/rotation.h"
 #include "math/transfrm.h"
+
+
+ MlRotation::MlRotation(const MlRotation &rot)
+ {
+     quat[0] = rot.quat[0];
+     quat[1] = rot.quat[1];
+     quat[2] = rot.quat[2];
+     quat[3] = rot.quat[3];
+ }
 
 
 void MlRotation::getValue(MlScalar& q0, MlScalar& q1, MlScalar& q2, MlScalar& q3) const
@@ -399,8 +408,17 @@ MlRotation& MlRotation::setValue(const MlVector3& rotateFrom, const MlVector3& r
     return (*this);
 }
 
+MlRotation& MlRotation::operator = (const MlRotation& r)
+{
+    quat[0] = r.quat[0];
+    quat[1] = r.quat[1];
+    quat[2] = r.quat[2];
+    quat[3] = r.quat[3];
 
-MlRotation& MlRotation::operator *=(const MlRotation& q)
+    return *this;
+}
+
+MlRotation& MlRotation::operator *= (const MlRotation& q)
 ////////////////////////////////////////////////////////////////////////
 //
 // Description:
