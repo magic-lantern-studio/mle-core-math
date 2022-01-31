@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mlmath", "mlmath.vcxproj", "{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mlmath_DLL", "mlmath_DLL.vcxproj", "{9CCCE102-5187-483D-B1A9-371488F52898}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Fixed Debug|Win32 = Fixed Debug|Win32
+		Fixed Debug|x64 = Fixed Debug|x64
+		Fixed Release|Win32 = Fixed Release|Win32
+		Fixed Release|x64 = Fixed Release|x64
+		Float Debug|Win32 = Float Debug|Win32
+		Float Debug|x64 = Float Debug|x64
+		Float Release|Win32 = Float Release|Win32
+		Float Release|x64 = Float Release|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Tools Float Debug|Win32 = Tools Float Debug|Win32
+		Tools Float Debug|x64 = Tools Float Debug|x64
+		Tools Float Release|Win32 = Tools Float Release|Win32
+		Tools Float Release|x64 = Tools Float Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Debug|Win32.ActiveCfg = Tools Float Debug|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Debug|Win32.Build.0 = Tools Float Debug|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Debug|x64.ActiveCfg = Tools Float Debug|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Debug|x64.Build.0 = Tools Float Debug|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Fixed Debug|Win32.ActiveCfg = Fixed Debug|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Fixed Debug|Win32.Build.0 = Fixed Debug|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Fixed Debug|x64.ActiveCfg = Fixed Debug|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Fixed Debug|x64.Build.0 = Fixed Debug|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Fixed Release|Win32.ActiveCfg = Fixed Release|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Fixed Release|Win32.Build.0 = Fixed Release|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Fixed Release|x64.ActiveCfg = Fixed Release|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Fixed Release|x64.Build.0 = Fixed Release|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Float Debug|Win32.ActiveCfg = Float Debug|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Float Debug|Win32.Build.0 = Float Debug|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Float Debug|x64.ActiveCfg = Float Debug|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Float Debug|x64.Build.0 = Float Debug|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Float Release|Win32.ActiveCfg = Float Release|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Float Release|Win32.Build.0 = Float Release|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Float Release|x64.ActiveCfg = Float Release|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Float Release|x64.Build.0 = Float Release|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Release|Win32.ActiveCfg = Tools Float Release|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Release|Win32.Build.0 = Tools Float Release|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Release|x64.ActiveCfg = Tools Float Release|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Release|x64.Build.0 = Tools Float Release|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Tools Float Debug|Win32.ActiveCfg = Tools Float Debug|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Tools Float Debug|Win32.Build.0 = Tools Float Debug|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Tools Float Debug|x64.ActiveCfg = Tools Float Debug|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Tools Float Debug|x64.Build.0 = Tools Float Debug|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Tools Float Release|Win32.ActiveCfg = Tools Float Release|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Tools Float Release|Win32.Build.0 = Tools Float Release|Win32
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Tools Float Release|x64.ActiveCfg = Tools Float Release|x64
+		{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}.Tools Float Release|x64.Build.0 = Tools Float Release|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Debug|Win32.Build.0 = Debug|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Debug|x64.ActiveCfg = Debug|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Debug|x64.Build.0 = Debug|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Debug|Win32.ActiveCfg = Debug|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Debug|Win32.Build.0 = Debug|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Debug|x64.ActiveCfg = Debug|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Debug|x64.Build.0 = Debug|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Release|Win32.ActiveCfg = Release|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Release|Win32.Build.0 = Release|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Release|x64.ActiveCfg = Release|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Release|x64.Build.0 = Release|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Debug|Win32.ActiveCfg = Debug|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Debug|Win32.Build.0 = Debug|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Debug|x64.ActiveCfg = Debug|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Debug|x64.Build.0 = Debug|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Release|Win32.ActiveCfg = Release|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Release|Win32.Build.0 = Release|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Release|x64.ActiveCfg = Release|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Release|x64.Build.0 = Release|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Release|Win32.ActiveCfg = Release|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Release|Win32.Build.0 = Release|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Release|x64.ActiveCfg = Release|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Release|x64.Build.0 = Release|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Debug|Win32.ActiveCfg = Debug|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Debug|Win32.Build.0 = Debug|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Debug|x64.ActiveCfg = Debug|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Debug|x64.Build.0 = Debug|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Release|Win32.ActiveCfg = Release|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Release|Win32.Build.0 = Release|Win32
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Release|x64.ActiveCfg = Release|x64
+		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
