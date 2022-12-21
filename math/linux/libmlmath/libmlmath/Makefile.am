@@ -31,6 +31,5 @@ libmlmath_la_CPPFLAGS = \
 	-DMLMATH_EXPORTS \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/../../common/include \
-	-I$(MLE_HOME)/Core/util/common/include \
-	-I$(MLE_HOME)/Core/util/linux/include \
+	-I$(MLE_ROOT)/include \
 	-std=c++11
