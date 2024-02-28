@@ -36,8 +36,7 @@ exampleProgram_CPPFLAGS = \
 	-DMLMATH_EXPORTS \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/../../common/include \
-	-I$(MLE_HOME)/Core/util/common/include \
-	-I$(MLE_HOME)/Core/util/linux/include \
+	-I$(MLE_ROOT)/include \
 	-I/usr/local/include \
-	-std=c++11
+	-std=c++17
 
