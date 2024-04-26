@@ -7,12 +7,12 @@ AC_PROG_CXX
 
 AC_PREFIX_DEFAULT(/opt/MagicLantern)
 
-AC_CANONICAL_SYSTEM
+dnl AC_CANONICAL_SYSTEM
 
 AC_CONFIG_MACRO_DIR([m4])
 
 dnl Initialize automake
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([subdir-objects])
 
 dnl This allows us to specify individual linking flags for each target
 AM_PROG_CC_C_O 
@@ -21,7 +21,6 @@ dnl Initialize Libtool
 LT_INIT
 
 AC_CONFIG_FILES(Makefile
-                exampleProgram/Makefile
                 libmlmath/Makefile
                 include/Makefile)
 AC_OUTPUT

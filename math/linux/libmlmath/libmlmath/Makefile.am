@@ -8,7 +8,7 @@ lib_LTLIBRARIES = libmlmath.la
 # Build information for each library
 
 # Sources for libmlmath
-libmlmath_la_SOURCES = libmlmath.c \
+libmlmath_la_SOURCES = \
 	$(top_srcdir)/../../common/src/asine.cxx \
 	$(top_srcdir)/../../common/src/atan.cxx \
 	$(top_srcdir)/../../common/src/fixed.cxx \
