@@ -7,58 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FA2A69C2C13549F00D84090 /* asine.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A6992C13549F00D84090 /* asine.cxx */; };
-		2FA2A69D2C13549F00D84090 /* atan.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A69A2C13549F00D84090 /* atan.cxx */; };
-		2FA2A69E2C13549F00D84090 /* fixed.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A69B2C13549F00D84090 /* fixed.cxx */; };
-		2FA2A6A42C1354D000D84090 /* recip.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A69F2C1354D000D84090 /* recip.cxx */; };
-		2FA2A6A52C1354D000D84090 /* sqrt.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A6A02C1354D000D84090 /* sqrt.cxx */; };
-		2FA2A6A62C1354D000D84090 /* scalar.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A6A12C1354D000D84090 /* scalar.cxx */; };
-		2FA2A6A72C1354D000D84090 /* rotation.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A6A22C1354D000D84090 /* rotation.cxx */; };
-		2FA2A6A82C1354D000D84090 /* sine.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A6A32C1354D000D84090 /* sine.cxx */; };
-		2FA2A6AB2C1354F800D84090 /* vector.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A6A92C1354F800D84090 /* vector.cxx */; };
-		2FA2A6AC2C1354F800D84090 /* transfrm.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A6AA2C1354F800D84090 /* transfrm.cxx */; };
-		2FA2A6BB2C13552E00D84090 /* sqrt.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6AD2C13552E00D84090 /* sqrt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6BC2C13552E00D84090 /* anglebr.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6AE2C13552E00D84090 /* anglebr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6BD2C13552E00D84090 /* mlmath.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6AF2C13552E00D84090 /* mlmath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6BE2C13552E00D84090 /* 3dmath.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B02C13552E00D84090 /* 3dmath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6BF2C13552E00D84090 /* atan.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B12C13552E00D84090 /* atan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6C02C13552E00D84090 /* vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B22C13552E00D84090 /* vector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6C12C13552E00D84090 /* angle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B32C13552E00D84090 /* angle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6C22C13552E00D84090 /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B42C13552E00D84090 /* scalar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6C32C13552E00D84090 /* transfrm.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B52C13552E00D84090 /* transfrm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6C42C13552E00D84090 /* rotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B62C13552E00D84090 /* rotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6C52C13552E00D84090 /* trig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B72C13552E00D84090 /* trig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6C62C13552E00D84090 /* sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B82C13552E00D84090 /* sine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6C72C13552E00D84090 /* asine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B92C13552E00D84090 /* asine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA2A6C82C13552E00D84090 /* recip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6BA2C13552E00D84090 /* recip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C80732C18D23B00021394 /* 3dmath.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C80652C18D23B00021394 /* 3dmath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C80742C18D23B00021394 /* recip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C80662C18D23B00021394 /* recip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C80752C18D23B00021394 /* rotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C80672C18D23B00021394 /* rotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C80762C18D23B00021394 /* sqrt.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C80682C18D23B00021394 /* sqrt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C80772C18D23B00021394 /* trig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C80692C18D23B00021394 /* trig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C80782C18D23B00021394 /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C806A2C18D23B00021394 /* scalar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C80792C18D23B00021394 /* asine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C806B2C18D23B00021394 /* asine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C807A2C18D23B00021394 /* vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C806C2C18D23B00021394 /* vector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C807B2C18D23B00021394 /* mlmath.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C806D2C18D23B00021394 /* mlmath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C807C2C18D23B00021394 /* anglebr.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C806E2C18D23B00021394 /* anglebr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C807D2C18D23B00021394 /* atan.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C806F2C18D23B00021394 /* atan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C807E2C18D23B00021394 /* transfrm.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C80702C18D23B00021394 /* transfrm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C807F2C18D23B00021394 /* sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C80712C18D23B00021394 /* sine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C80802C18D23B00021394 /* angle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2C80722C18D23B00021394 /* angle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C80842C18D25900021394 /* fixed.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C80812C18D25900021394 /* fixed.cxx */; };
+		2F2C80852C18D25900021394 /* asine.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C80822C18D25900021394 /* asine.cxx */; };
+		2F2C80862C18D25900021394 /* atan.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C80832C18D25900021394 /* atan.cxx */; };
+		2F2C808C2C18D26F00021394 /* recip.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C80872C18D26F00021394 /* recip.cxx */; };
+		2F2C808D2C18D26F00021394 /* sine.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C80882C18D26F00021394 /* sine.cxx */; };
+		2F2C808E2C18D26F00021394 /* sqrt.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C80892C18D26F00021394 /* sqrt.cxx */; };
+		2F2C808F2C18D26F00021394 /* rotation.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C808A2C18D26F00021394 /* rotation.cxx */; };
+		2F2C80902C18D26F00021394 /* scalar.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C808B2C18D26F00021394 /* scalar.cxx */; };
+		2F2C80932C18D28800021394 /* transfrm.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C80912C18D28800021394 /* transfrm.cxx */; };
+		2F2C80942C18D28800021394 /* vector.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C80922C18D28800021394 /* vector.cxx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F2C80652C18D23B00021394 /* 3dmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 3dmath.h; path = ../common/include/math/3dmath.h; sourceTree = "<group>"; };
+		2F2C80662C18D23B00021394 /* recip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = recip.h; path = ../common/include/math/recip.h; sourceTree = "<group>"; };
+		2F2C80672C18D23B00021394 /* rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rotation.h; path = ../common/include/math/rotation.h; sourceTree = "<group>"; };
+		2F2C80682C18D23B00021394 /* sqrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqrt.h; path = ../common/include/math/sqrt.h; sourceTree = "<group>"; };
+		2F2C80692C18D23B00021394 /* trig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trig.h; path = ../common/include/math/trig.h; sourceTree = "<group>"; };
+		2F2C806A2C18D23B00021394 /* scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scalar.h; path = ../common/include/math/scalar.h; sourceTree = "<group>"; };
+		2F2C806B2C18D23B00021394 /* asine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asine.h; path = ../common/include/math/asine.h; sourceTree = "<group>"; };
+		2F2C806C2C18D23B00021394 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector.h; path = ../common/include/math/vector.h; sourceTree = "<group>"; };
+		2F2C806D2C18D23B00021394 /* mlmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mlmath.h; path = ../common/include/math/mlmath.h; sourceTree = "<group>"; };
+		2F2C806E2C18D23B00021394 /* anglebr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = anglebr.h; path = ../common/include/math/anglebr.h; sourceTree = "<group>"; };
+		2F2C806F2C18D23B00021394 /* atan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atan.h; path = ../common/include/math/atan.h; sourceTree = "<group>"; };
+		2F2C80702C18D23B00021394 /* transfrm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transfrm.h; path = ../common/include/math/transfrm.h; sourceTree = "<group>"; };
+		2F2C80712C18D23B00021394 /* sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sine.h; path = ../common/include/math/sine.h; sourceTree = "<group>"; };
+		2F2C80722C18D23B00021394 /* angle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = angle.h; path = ../common/include/math/angle.h; sourceTree = "<group>"; };
+		2F2C80812C18D25900021394 /* fixed.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fixed.cxx; path = ../common/src/fixed.cxx; sourceTree = "<group>"; };
+		2F2C80822C18D25900021394 /* asine.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = asine.cxx; path = ../common/src/asine.cxx; sourceTree = "<group>"; };
+		2F2C80832C18D25900021394 /* atan.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = atan.cxx; path = ../common/src/atan.cxx; sourceTree = "<group>"; };
+		2F2C80872C18D26F00021394 /* recip.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = recip.cxx; path = ../common/src/recip.cxx; sourceTree = "<group>"; };
+		2F2C80882C18D26F00021394 /* sine.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sine.cxx; path = ../common/src/sine.cxx; sourceTree = "<group>"; };
+		2F2C80892C18D26F00021394 /* sqrt.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sqrt.cxx; path = ../common/src/sqrt.cxx; sourceTree = "<group>"; };
+		2F2C808A2C18D26F00021394 /* rotation.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rotation.cxx; path = ../common/src/rotation.cxx; sourceTree = "<group>"; };
+		2F2C808B2C18D26F00021394 /* scalar.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scalar.cxx; path = ../common/src/scalar.cxx; sourceTree = "<group>"; };
+		2F2C80912C18D28800021394 /* transfrm.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transfrm.cxx; path = ../common/src/transfrm.cxx; sourceTree = "<group>"; };
+		2F2C80922C18D28800021394 /* vector.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vector.cxx; path = ../common/src/vector.cxx; sourceTree = "<group>"; };
 		2FA2A6902C1353D600D84090 /* libmlmath.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmlmath.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FA2A6992C13549F00D84090 /* asine.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = asine.cxx; path = ../../../common/src/asine.cxx; sourceTree = "<group>"; };
-		2FA2A69A2C13549F00D84090 /* atan.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = atan.cxx; path = ../../../common/src/atan.cxx; sourceTree = "<group>"; };
-		2FA2A69B2C13549F00D84090 /* fixed.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fixed.cxx; path = ../../../common/src/fixed.cxx; sourceTree = "<group>"; };
-		2FA2A69F2C1354D000D84090 /* recip.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = recip.cxx; path = ../../../common/src/recip.cxx; sourceTree = "<group>"; };
-		2FA2A6A02C1354D000D84090 /* sqrt.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sqrt.cxx; path = ../../../common/src/sqrt.cxx; sourceTree = "<group>"; };
-		2FA2A6A12C1354D000D84090 /* scalar.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scalar.cxx; path = ../../../common/src/scalar.cxx; sourceTree = "<group>"; };
-		2FA2A6A22C1354D000D84090 /* rotation.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rotation.cxx; path = ../../../common/src/rotation.cxx; sourceTree = "<group>"; };
-		2FA2A6A32C1354D000D84090 /* sine.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sine.cxx; path = ../../../common/src/sine.cxx; sourceTree = "<group>"; };
-		2FA2A6A92C1354F800D84090 /* vector.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vector.cxx; path = ../../../common/src/vector.cxx; sourceTree = "<group>"; };
-		2FA2A6AA2C1354F800D84090 /* transfrm.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transfrm.cxx; path = ../../../common/src/transfrm.cxx; sourceTree = "<group>"; };
-		2FA2A6AD2C13552E00D84090 /* sqrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqrt.h; path = ../../../common/include/math/sqrt.h; sourceTree = "<group>"; };
-		2FA2A6AE2C13552E00D84090 /* anglebr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = anglebr.h; path = ../../../common/include/math/anglebr.h; sourceTree = "<group>"; };
-		2FA2A6AF2C13552E00D84090 /* mlmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mlmath.h; path = ../../../common/include/math/mlmath.h; sourceTree = "<group>"; };
-		2FA2A6B02C13552E00D84090 /* 3dmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 3dmath.h; path = ../../../common/include/math/3dmath.h; sourceTree = "<group>"; };
-		2FA2A6B12C13552E00D84090 /* atan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atan.h; path = ../../../common/include/math/atan.h; sourceTree = "<group>"; };
-		2FA2A6B22C13552E00D84090 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector.h; path = ../../../common/include/math/vector.h; sourceTree = "<group>"; };
-		2FA2A6B32C13552E00D84090 /* angle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = angle.h; path = ../../../common/include/math/angle.h; sourceTree = "<group>"; };
-		2FA2A6B42C13552E00D84090 /* scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scalar.h; path = ../../../common/include/math/scalar.h; sourceTree = "<group>"; };
-		2FA2A6B52C13552E00D84090 /* transfrm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transfrm.h; path = ../../../common/include/math/transfrm.h; sourceTree = "<group>"; };
-		2FA2A6B62C13552E00D84090 /* rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rotation.h; path = ../../../common/include/math/rotation.h; sourceTree = "<group>"; };
-		2FA2A6B72C13552E00D84090 /* trig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trig.h; path = ../../../common/include/math/trig.h; sourceTree = "<group>"; };
-		2FA2A6B82C13552E00D84090 /* sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sine.h; path = ../../../common/include/math/sine.h; sourceTree = "<group>"; };
-		2FA2A6B92C13552E00D84090 /* asine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asine.h; path = ../../../common/include/math/asine.h; sourceTree = "<group>"; };
-		2FA2A6BA2C13552E00D84090 /* recip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = recip.h; path = ../../../common/include/math/recip.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,16 +92,16 @@
 		2FA2A6972C1353FA00D84090 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				2FA2A6AA2C1354F800D84090 /* transfrm.cxx */,
-				2FA2A6A92C1354F800D84090 /* vector.cxx */,
-				2FA2A69F2C1354D000D84090 /* recip.cxx */,
-				2FA2A6A22C1354D000D84090 /* rotation.cxx */,
-				2FA2A6A12C1354D000D84090 /* scalar.cxx */,
-				2FA2A6A32C1354D000D84090 /* sine.cxx */,
-				2FA2A6A02C1354D000D84090 /* sqrt.cxx */,
-				2FA2A6992C13549F00D84090 /* asine.cxx */,
-				2FA2A69A2C13549F00D84090 /* atan.cxx */,
-				2FA2A69B2C13549F00D84090 /* fixed.cxx */,
+				2F2C80912C18D28800021394 /* transfrm.cxx */,
+				2F2C80922C18D28800021394 /* vector.cxx */,
+				2F2C80872C18D26F00021394 /* recip.cxx */,
+				2F2C808A2C18D26F00021394 /* rotation.cxx */,
+				2F2C808B2C18D26F00021394 /* scalar.cxx */,
+				2F2C80882C18D26F00021394 /* sine.cxx */,
+				2F2C80892C18D26F00021394 /* sqrt.cxx */,
+				2F2C80822C18D25900021394 /* asine.cxx */,
+				2F2C80832C18D25900021394 /* atan.cxx */,
+				2F2C80812C18D25900021394 /* fixed.cxx */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -109,20 +109,20 @@
 		2FA2A6982C13541800D84090 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				2FA2A6B02C13552E00D84090 /* 3dmath.h */,
-				2FA2A6B32C13552E00D84090 /* angle.h */,
-				2FA2A6AE2C13552E00D84090 /* anglebr.h */,
-				2FA2A6B92C13552E00D84090 /* asine.h */,
-				2FA2A6B12C13552E00D84090 /* atan.h */,
-				2FA2A6AF2C13552E00D84090 /* mlmath.h */,
-				2FA2A6BA2C13552E00D84090 /* recip.h */,
-				2FA2A6B62C13552E00D84090 /* rotation.h */,
-				2FA2A6B42C13552E00D84090 /* scalar.h */,
-				2FA2A6B82C13552E00D84090 /* sine.h */,
-				2FA2A6AD2C13552E00D84090 /* sqrt.h */,
-				2FA2A6B52C13552E00D84090 /* transfrm.h */,
-				2FA2A6B72C13552E00D84090 /* trig.h */,
-				2FA2A6B22C13552E00D84090 /* vector.h */,
+				2F2C80652C18D23B00021394 /* 3dmath.h */,
+				2F2C80722C18D23B00021394 /* angle.h */,
+				2F2C806E2C18D23B00021394 /* anglebr.h */,
+				2F2C806B2C18D23B00021394 /* asine.h */,
+				2F2C806F2C18D23B00021394 /* atan.h */,
+				2F2C806D2C18D23B00021394 /* mlmath.h */,
+				2F2C80662C18D23B00021394 /* recip.h */,
+				2F2C80672C18D23B00021394 /* rotation.h */,
+				2F2C806A2C18D23B00021394 /* scalar.h */,
+				2F2C80712C18D23B00021394 /* sine.h */,
+				2F2C80682C18D23B00021394 /* sqrt.h */,
+				2F2C80702C18D23B00021394 /* transfrm.h */,
+				2F2C80692C18D23B00021394 /* trig.h */,
+				2F2C806C2C18D23B00021394 /* vector.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
@@ -134,20 +134,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA2A6C42C13552E00D84090 /* rotation.h in Headers */,
-				2FA2A6BF2C13552E00D84090 /* atan.h in Headers */,
-				2FA2A6C62C13552E00D84090 /* sine.h in Headers */,
-				2FA2A6BD2C13552E00D84090 /* mlmath.h in Headers */,
-				2FA2A6C12C13552E00D84090 /* angle.h in Headers */,
-				2FA2A6BC2C13552E00D84090 /* anglebr.h in Headers */,
-				2FA2A6C32C13552E00D84090 /* transfrm.h in Headers */,
-				2FA2A6C02C13552E00D84090 /* vector.h in Headers */,
-				2FA2A6BB2C13552E00D84090 /* sqrt.h in Headers */,
-				2FA2A6C72C13552E00D84090 /* asine.h in Headers */,
-				2FA2A6C82C13552E00D84090 /* recip.h in Headers */,
-				2FA2A6BE2C13552E00D84090 /* 3dmath.h in Headers */,
-				2FA2A6C22C13552E00D84090 /* scalar.h in Headers */,
-				2FA2A6C52C13552E00D84090 /* trig.h in Headers */,
+				2F2C807F2C18D23B00021394 /* sine.h in Headers */,
+				2F2C807B2C18D23B00021394 /* mlmath.h in Headers */,
+				2F2C80802C18D23B00021394 /* angle.h in Headers */,
+				2F2C80772C18D23B00021394 /* trig.h in Headers */,
+				2F2C807A2C18D23B00021394 /* vector.h in Headers */,
+				2F2C80752C18D23B00021394 /* rotation.h in Headers */,
+				2F2C80742C18D23B00021394 /* recip.h in Headers */,
+				2F2C807E2C18D23B00021394 /* transfrm.h in Headers */,
+				2F2C80762C18D23B00021394 /* sqrt.h in Headers */,
+				2F2C807C2C18D23B00021394 /* anglebr.h in Headers */,
+				2F2C80792C18D23B00021394 /* asine.h in Headers */,
+				2F2C807D2C18D23B00021394 /* atan.h in Headers */,
+				2F2C80782C18D23B00021394 /* scalar.h in Headers */,
+				2F2C80732C18D23B00021394 /* 3dmath.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,16 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA2A6A82C1354D000D84090 /* sine.cxx in Sources */,
-				2FA2A69E2C13549F00D84090 /* fixed.cxx in Sources */,
-				2FA2A6AB2C1354F800D84090 /* vector.cxx in Sources */,
-				2FA2A6A72C1354D000D84090 /* rotation.cxx in Sources */,
-				2FA2A6A52C1354D000D84090 /* sqrt.cxx in Sources */,
-				2FA2A6A42C1354D000D84090 /* recip.cxx in Sources */,
-				2FA2A6A62C1354D000D84090 /* scalar.cxx in Sources */,
-				2FA2A69C2C13549F00D84090 /* asine.cxx in Sources */,
-				2FA2A6AC2C1354F800D84090 /* transfrm.cxx in Sources */,
-				2FA2A69D2C13549F00D84090 /* atan.cxx in Sources */,
+				2F2C80852C18D25900021394 /* asine.cxx in Sources */,
+				2F2C80902C18D26F00021394 /* scalar.cxx in Sources */,
+				2F2C808F2C18D26F00021394 /* rotation.cxx in Sources */,
+				2F2C808D2C18D26F00021394 /* sine.cxx in Sources */,
+				2F2C80942C18D28800021394 /* vector.cxx in Sources */,
+				2F2C808C2C18D26F00021394 /* recip.cxx in Sources */,
+				2F2C80842C18D25900021394 /* fixed.cxx in Sources */,
+				2F2C80862C18D25900021394 /* atan.cxx in Sources */,
+				2F2C80932C18D28800021394 /* transfrm.cxx in Sources */,
+				2F2C808E2C18D26F00021394 /* sqrt.cxx in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +373,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
-					../../../common/include,
+					../../common/include,
 					/opt/MagicLantern/include,
 				);
 				INSTALL_GROUP = wizzerworks;
@@ -395,7 +395,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
-					../../../common/include,
+					../../common/include,
 					/opt/MagicLantern/include,
 				);
 				INSTALL_GROUP = wizzerworks;
