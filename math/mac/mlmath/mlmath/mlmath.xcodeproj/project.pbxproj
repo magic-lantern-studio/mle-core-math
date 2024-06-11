@@ -17,20 +17,20 @@
 		2FA2A6A82C1354D000D84090 /* sine.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A6A32C1354D000D84090 /* sine.cxx */; };
 		2FA2A6AB2C1354F800D84090 /* vector.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A6A92C1354F800D84090 /* vector.cxx */; };
 		2FA2A6AC2C1354F800D84090 /* transfrm.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A6AA2C1354F800D84090 /* transfrm.cxx */; };
-		2FA2A6BB2C13552E00D84090 /* sqrt.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6AD2C13552E00D84090 /* sqrt.h */; };
-		2FA2A6BC2C13552E00D84090 /* anglebr.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6AE2C13552E00D84090 /* anglebr.h */; };
-		2FA2A6BD2C13552E00D84090 /* mlmath.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6AF2C13552E00D84090 /* mlmath.h */; };
-		2FA2A6BE2C13552E00D84090 /* 3dmath.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B02C13552E00D84090 /* 3dmath.h */; };
-		2FA2A6BF2C13552E00D84090 /* atan.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B12C13552E00D84090 /* atan.h */; };
-		2FA2A6C02C13552E00D84090 /* vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B22C13552E00D84090 /* vector.h */; };
-		2FA2A6C12C13552E00D84090 /* angle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B32C13552E00D84090 /* angle.h */; };
-		2FA2A6C22C13552E00D84090 /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B42C13552E00D84090 /* scalar.h */; };
-		2FA2A6C32C13552E00D84090 /* transfrm.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B52C13552E00D84090 /* transfrm.h */; };
-		2FA2A6C42C13552E00D84090 /* rotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B62C13552E00D84090 /* rotation.h */; };
-		2FA2A6C52C13552E00D84090 /* trig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B72C13552E00D84090 /* trig.h */; };
-		2FA2A6C62C13552E00D84090 /* sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B82C13552E00D84090 /* sine.h */; };
-		2FA2A6C72C13552E00D84090 /* asine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B92C13552E00D84090 /* asine.h */; };
-		2FA2A6C82C13552E00D84090 /* recip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6BA2C13552E00D84090 /* recip.h */; };
+		2FA2A6BB2C13552E00D84090 /* sqrt.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6AD2C13552E00D84090 /* sqrt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6BC2C13552E00D84090 /* anglebr.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6AE2C13552E00D84090 /* anglebr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6BD2C13552E00D84090 /* mlmath.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6AF2C13552E00D84090 /* mlmath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6BE2C13552E00D84090 /* 3dmath.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B02C13552E00D84090 /* 3dmath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6BF2C13552E00D84090 /* atan.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B12C13552E00D84090 /* atan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6C02C13552E00D84090 /* vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B22C13552E00D84090 /* vector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6C12C13552E00D84090 /* angle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B32C13552E00D84090 /* angle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6C22C13552E00D84090 /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B42C13552E00D84090 /* scalar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6C32C13552E00D84090 /* transfrm.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B52C13552E00D84090 /* transfrm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6C42C13552E00D84090 /* rotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B62C13552E00D84090 /* rotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6C52C13552E00D84090 /* trig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B72C13552E00D84090 /* trig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6C62C13552E00D84090 /* sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B82C13552E00D84090 /* sine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6C72C13552E00D84090 /* asine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6B92C13552E00D84090 /* asine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA2A6C82C13552E00D84090 /* recip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA2A6BA2C13552E00D84090 /* recip.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,18 +136,18 @@
 			files = (
 				2FA2A6C42C13552E00D84090 /* rotation.h in Headers */,
 				2FA2A6BF2C13552E00D84090 /* atan.h in Headers */,
-				2FA2A6C52C13552E00D84090 /* trig.h in Headers */,
 				2FA2A6C62C13552E00D84090 /* sine.h in Headers */,
 				2FA2A6BD2C13552E00D84090 /* mlmath.h in Headers */,
 				2FA2A6C12C13552E00D84090 /* angle.h in Headers */,
 				2FA2A6BC2C13552E00D84090 /* anglebr.h in Headers */,
-				2FA2A6C22C13552E00D84090 /* scalar.h in Headers */,
 				2FA2A6C32C13552E00D84090 /* transfrm.h in Headers */,
 				2FA2A6C02C13552E00D84090 /* vector.h in Headers */,
 				2FA2A6BB2C13552E00D84090 /* sqrt.h in Headers */,
 				2FA2A6C72C13552E00D84090 /* asine.h in Headers */,
 				2FA2A6C82C13552E00D84090 /* recip.h in Headers */,
 				2FA2A6BE2C13552E00D84090 /* 3dmath.h in Headers */,
+				2FA2A6C22C13552E00D84090 /* scalar.h in Headers */,
+				2FA2A6C52C13552E00D84090 /* trig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +161,7 @@
 				2FA2A68C2C1353D600D84090 /* Headers */,
 				2FA2A68D2C1353D600D84090 /* Sources */,
 				2FA2A68E2C1353D600D84090 /* Frameworks */,
+				2FEE78032C17A9090003B13B /* Install libmlmath Library */,
 			);
 			buildRules = (
 			);
@@ -202,6 +203,27 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FEE78032C17A9090003B13B /* Install libmlmath Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Install libmlmath Library";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Installing libmlmath.dylib and headers files.\"\necho `pwd`\necho ${BUILT_PRODUCTS_DIR}\n\nif [ -d \"/opt/MagicLantern/lib\" ] \nthen\n    echo \"Directory /opt/MagicLantern/lib exists.\" \nelse\n    #echo \"Warning: Directory /opt/MagicLantern/lib does not exist. Creating it.\"\n    #sudo mkdir -p /opt/MagicLantern/lib\n\n    echo \"Error: Directory /opt/MagicLantern/lib does not exist.\"\n    exit 1\nfi\n\necho \"Installing libmlmath.dylib to /opt/MagicLantern/lib.\"\n#cp ./mlutil-DerivedData/mlmath/Build/Products/Debug/libmlmath.dylib /opt/MagicLantern/lib\ncp ${BUILT_PRODUCTS_DIR}/libmlmath.dylib /opt/MagicLantern/lib\n\nif [ -d \"/opt/MagicLantern/include/math\" ] \nthen\n    echo \"Directory /opt/MagicLantern/include/math exists.\" \nelse\n    #echo \"Warning: Directory /opt/MagicLantern/include/mle does not exist. Creating it.\"\n    #sudo mkdir -p /opt/MagicLantern/include/mle\n        \n    echo \"Error: Directory /opt/MagicLantern/include/math does not existt.\"\n    exit 1\nfi\n\necho \"Installing libmlmath header files to /opt/MagicLantern/include/math.\"\n#cp -R ./mlutil-DerivedData/mlath/Build/Products/Debug/usr/local/include/* /opt/MagicLantern/include/mle\ncp -R ${BUILT_PRODUCTS_DIR}/usr/local/include/* /opt/MagicLantern/include/math\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FA2A68D2C1353D600D84090 /* Sources */ = {
@@ -265,6 +287,9 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ML_FIXED_POINT=0",
+					"ML_MATH_DEBUG=1",
+					MLMATH_EXPORTS,
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -320,6 +345,11 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ML_FIXED_POINT=0",
+					"ML_MATH_DEBUG=0",
+					MLMATH_EXPORTS,
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -336,24 +366,44 @@
 		2FA2A6952C1353D600D84090 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_GROUP = wizzerworks;
+				ALTERNATE_OWNER = wizzerworks;
 				CODE_SIGN_STYLE = Automatic;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../../../common/include,
+					/opt/MagicLantern/include,
+				);
+				INSTALL_GROUP = wizzerworks;
+				INSTALL_OWNER = wizzerworks;
+				INSTALL_PATH = /opt/MagicLantern/lib;
+				OTHER_CFLAGS = "-DMLE_NOT_DLL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
 		2FA2A6962C1353D600D84090 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_GROUP = wizzerworks;
+				ALTERNATE_OWNER = wizzerworks;
 				CODE_SIGN_STYLE = Automatic;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../../../common/include,
+					/opt/MagicLantern/include,
+				);
+				INSTALL_GROUP = wizzerworks;
+				INSTALL_OWNER = wizzerworks;
+				INSTALL_PATH = /opt/MagicLantern/lib;
+				OTHER_CFLAGS = "-DMLE_NOT_DLL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
