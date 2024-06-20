@@ -221,7 +221,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Installing libmlmath.dylib and headers files.\"\necho `pwd`\necho ${BUILT_PRODUCTS_DIR}\n\nif [ -d \"/opt/MagicLantern/lib\" ] \nthen\n    echo \"Directory /opt/MagicLantern/lib exists.\" \nelse\n    #echo \"Warning: Directory /opt/MagicLantern/lib does not exist. Creating it.\"\n    #sudo mkdir -p /opt/MagicLantern/lib\n\n    echo \"Error: Directory /opt/MagicLantern/lib does not exist.\"\n    exit 1\nfi\n\necho \"Installing libmlmath.dylib to /opt/MagicLantern/lib.\"\n#cp ./mlutil-DerivedData/mlmath/Build/Products/Debug/libmlmath.dylib /opt/MagicLantern/lib\ncp ${BUILT_PRODUCTS_DIR}/libmlmath.dylib /opt/MagicLantern/lib\n\nif [ -d \"/opt/MagicLantern/include/math\" ] \nthen\n    echo \"Directory /opt/MagicLantern/include/math exists.\" \nelse\n    #echo \"Warning: Directory /opt/MagicLantern/include/mle does not exist. Creating it.\"\n    #sudo mkdir -p /opt/MagicLantern/include/mle\n        \n    echo \"Error: Directory /opt/MagicLantern/include/math does not existt.\"\n    exit 1\nfi\n\necho \"Installing libmlmath header files to /opt/MagicLantern/include/math.\"\n#cp -R ./mlutil-DerivedData/mlath/Build/Products/Debug/usr/local/include/* /opt/MagicLantern/include/mle\ncp -R ${BUILT_PRODUCTS_DIR}/usr/local/include/* /opt/MagicLantern/include/math\n";
+			shellScript = "echo \"Installing libmlmath.dylib and headers files.\"\necho `pwd`\necho ${BUILT_PRODUCTS_DIR}\n\nif [ -d \"/opt/MagicLantern/lib\" ] \nthen\n    echo \"Directory /opt/MagicLantern/lib exists.\" \nelse\n    #echo \"Warning: Directory /opt/MagicLantern/lib does not exist. Creating it.\"\n    #sudo mkdir -p /opt/MagicLantern/lib\n\n    echo \"Error: Directory /opt/MagicLantern/lib does not exist.\"\n    exit 1\nfi\n\necho \"Installing libmlmath.dylib to /opt/MagicLantern/lib.\"\ncp ${BUILT_PRODUCTS_DIR}/libmlmath.dylib /opt/MagicLantern/lib\n\nif [ -d \"/opt/MagicLantern/include/math\" ] \nthen\n    echo \"Directory /opt/MagicLantern/include/math exists.\" \nelse\n    #echo \"Warning: Directory /opt/MagicLantern/include/math does not exist. Creating it.\"\n    #sudo mkdir -p /opt/MagicLantern/include/math\n        \n    echo \"Error: Directory /opt/MagicLantern/include/math does not existt.\"\n    exit 1\nfi\n\necho \"Installing libmlmath header files to /opt/MagicLantern/include/math.\"\ncp -R ${BUILT_PRODUCTS_DIR}/usr/local/include/* /opt/MagicLantern/include/math\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -287,11 +287,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					MLMATH_EXPORTS,
+					MLE_NOT_DLL,
 					"ML_FIXED_POINT=0",
 					"ML_MATH_DEBUG=1",
-					MLMATH_EXPORTS,
 					"DEBUG=1",
-					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -346,9 +346,9 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"ML_FIXED_POINT=0",
-					"ML_MATH_DEBUG=0",
 					MLMATH_EXPORTS,
+					MLE_NOT_DLL,
+					"ML_FIXED_POINT=0",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -379,7 +379,7 @@
 				INSTALL_GROUP = wizzerworks;
 				INSTALL_OWNER = wizzerworks;
 				INSTALL_PATH = /opt/MagicLantern/lib;
-				OTHER_CFLAGS = "-DMLE_NOT_DLL";
+				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 			};
@@ -401,7 +401,7 @@
 				INSTALL_GROUP = wizzerworks;
 				INSTALL_OWNER = wizzerworks;
 				INSTALL_PATH = /opt/MagicLantern/lib;
-				OTHER_CFLAGS = "-DMLE_NOT_DLL";
+				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 			};
