@@ -195,6 +195,30 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Tools Float Debug|x64'">$(Platform)\$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Tools Float Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Float Debug|x64'">
+    <TargetName>mlmathd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Float Debug|Win32'">
+    <TargetName>mlmathd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Fixed Debug|Win32'">
+    <TargetName>mlfmathd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Fixed Debug|x64'">
+    <TargetName>mlfmathd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Fixed Release|Win32'">
+    <TargetName>mlfmath</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Fixed Release|x64'">
+    <TargetName>mlfmath</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Float Debug|x64'">
+    <TargetName>mlmathd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Float Debug|Win32'">
+    <TargetName>mlmathd</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Fixed Release|Win32'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
