@@ -32,7 +32,7 @@ build_script:
     autoconf;
     ./configure;
     make
--sh: >-
+- sh: >-
     make install
 
 # Custom script to create an .zip file containing the libmlmath artifacts.
