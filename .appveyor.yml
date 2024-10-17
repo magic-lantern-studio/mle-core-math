@@ -33,7 +33,7 @@ build_script:
     ./configure;
     make
 - sh: >-
-    make install
+    sudo make install
 
 # Custom script to create an .zip file containing the libmlmath artifacts.
 after_build:
