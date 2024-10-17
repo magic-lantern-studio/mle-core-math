@@ -1,0 +1,45 @@
+version: 1.0.{build}
+image: Ubuntu2204
+branches:
+  only:
+  - master
+
+# Set environment
+environment:
+  MLE_ROOT: /opt/MagicLantern
+
+# Install dependencies
+install:
+- sh: >-
+    git clone -q --branch=master https://github.com/magic-lantern-studio/mle-core-util.git /home/appveyor/projects/mle-core-util;
+    cd /home/appveyor/projects/mle-core-util/util/linux/build;
+    libtoolize;
+    aclocal;
+    automake --add-missing --ignore-deps;
+    autoconf;
+    ./configure;
+    make;
+    sudo mkdir $MLE_ROOT;
+    sudo make install
+
+# Custom script to build libmlmath.so using autoconf tools.
+build_script:
+- sh: >-
+    cd /home/appveyor/projects/mle-core-math/math/linux/libmlmath;
+    libtoolize;
+    aclocal;
+    automake --add-missing --ignore-deps;
+    autoconf;
+    ./configure;
+    make
+-sh: >-
+    make install
+
+# Custom script to create an .zip file containing the libmlmath artifacts.
+after_build:
+    7z a mlmath.zip $MLE_ROOT
+
+# Define artifacts to push to AppVeyor
+artifacts:
+- path: math/linux/libmlmath/mlmath.zip
+  name: mle-core-math
