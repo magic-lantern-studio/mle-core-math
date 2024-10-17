@@ -33,6 +33,9 @@ build_script:
     ./configure;
     make
 - sh: >-
+    cd /home/appveyor/projects/mle-core-util/util/linux/build;
+    sudo make uninstall;
+    cd /home/appveyor/projects/mle-core-math/math/linux/libmlmath;
     sudo make install
 
 # Custom script to create an .zip file containing the libmlmath artifacts.
