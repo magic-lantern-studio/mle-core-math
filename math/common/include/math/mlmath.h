@@ -59,13 +59,13 @@
 #   define MLMATH_API __declspec(dllexport)
 #  endif /* MLE_MAKE_DLL */
 # else /* !MLMATH_EXPORTS */
-#  ifdef MLE_DLL
+#  ifdef MLE_MATH_DLL
 #   define MLMATH_API __declspec(dllimport)
-#  else /* !MLE_DLL */
-#   ifndef MLE_NOT_DLL
-#    error Define either MLE_DLL or MLE_NOT_DLL as appropriate for your linkage! See math/mlmath.h for further instructions.
-#   endif /* MLE_NOT_DLL */
-#  endif /* !MLE_DLL */
+#  else /* !MLE_MATH_DLL */
+#   ifndef MLE_NOT_MATH_DLL
+#    error Define either MLE_MATH_DLL or MLE_NOT_MATH_DLL as appropriate for your linkage! See math/mlmath.h for further instructions.
+#   endif /* MLE_NOT_MATH_DLL */
+#  endif /* !MLE_MATH_DLL */
 # endif /* !MLMATH_EXPORTS */
 
 /* Empty define to avoid errors when _not_ compiling an MSWindows DLL. */
