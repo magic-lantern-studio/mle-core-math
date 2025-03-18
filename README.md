@@ -9,4 +9,10 @@ floating-point and fixed-point utility.
 Instructions for generating the API documentation can be found on the [Math Library wiki](https://github.com/magic-lantern-studio/mle-documentation/wiki/Math-Library) page captured in the [mle-documentation Github project](https://github.com/magic-lantern-studio/mle-documentation).
 
 # Build Status
-AppVeyor CI: <img src="https://ci.appveyor.com/api/projects/status/7a9admp8k7v8828e?svg=true" alt="Project Badge">
+AppVeyor CI for Ubuntu 22.04 LTS 64-bit: <img src="https://ci.appveyor.com/api/projects/status/7a9admp8k7v8828e?svg=true" alt="Project Badge">
+
+# Documentation
+Documentation on the Magic Lantern math library can be found at:
+
+  * [mle-core-math wiki](https://github.com/magic-lantern-studio/mle-core-math/wiki)
+  * [mle-documentation project wiki](https://github.com/magic-lantern-studio/mle-documentation/wiki)
