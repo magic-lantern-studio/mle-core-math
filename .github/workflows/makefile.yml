@@ -17,9 +17,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Add msbuild to Path
         uses: microsoft/setup-msbuild@v1
+        with:
+            msbuild-architecture: x64
       - name: Build with msbuild
         shell: cmd
         run: |
           cd math\win32\build\msvc15 
           pwd
           dir
+          msbuild mlmath.sln
