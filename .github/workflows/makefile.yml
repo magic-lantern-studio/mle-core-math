@@ -26,6 +26,6 @@ jobs:
         shell: cmd
         run: |
           cd math\win32\build\msvc15 
-          pwd
-          dir
-          msbuild mlmath.sln
+          #pwd
+          #dir
+          msbuild mlmath.sln /p:Configuration=Debug /p:Platform=x64
