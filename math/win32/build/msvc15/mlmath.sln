@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.35431.46
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mlmath", "mlmath.vcxproj", "{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mlmath_DLL", "mlmath_DLL.vcxproj", "{9CCCE102-5187-483D-B1A9-371488F52898}"
@@ -60,37 +62,32 @@ Global
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Debug|Win32.ActiveCfg = Debug|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Debug|Win32.Build.0 = Debug|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Debug|x64.ActiveCfg = Debug|x64
-		{9CCCE102-5187-483D-B1A9-371488F52898}.Debug|x64.Build.0 = Debug|x64
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Debug|Win32.ActiveCfg = Debug|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Debug|Win32.Build.0 = Debug|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Debug|x64.ActiveCfg = Debug|x64
-		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Debug|x64.Build.0 = Debug|x64
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Release|Win32.ActiveCfg = Release|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Release|Win32.Build.0 = Release|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Release|x64.ActiveCfg = Release|x64
-		{9CCCE102-5187-483D-B1A9-371488F52898}.Fixed Release|x64.Build.0 = Release|x64
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Debug|Win32.ActiveCfg = Debug|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Debug|Win32.Build.0 = Debug|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Debug|x64.ActiveCfg = Debug|x64
-		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Debug|x64.Build.0 = Debug|x64
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Release|Win32.ActiveCfg = Release|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Release|Win32.Build.0 = Release|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Release|x64.ActiveCfg = Release|x64
-		{9CCCE102-5187-483D-B1A9-371488F52898}.Float Release|x64.Build.0 = Release|x64
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Release|Win32.ActiveCfg = Release|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Release|Win32.Build.0 = Release|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Release|x64.ActiveCfg = Release|x64
-		{9CCCE102-5187-483D-B1A9-371488F52898}.Release|x64.Build.0 = Release|x64
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Debug|Win32.ActiveCfg = Debug|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Debug|Win32.Build.0 = Debug|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Debug|x64.ActiveCfg = Debug|x64
-		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Debug|x64.Build.0 = Debug|x64
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Release|Win32.ActiveCfg = Release|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Release|Win32.Build.0 = Release|Win32
 		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Release|x64.ActiveCfg = Release|x64
-		{9CCCE102-5187-483D-B1A9-371488F52898}.Tools Float Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC7AA328-A6A1-42A1-B4B8-D8DC7C6E11BE}
 	EndGlobalSection
 EndGlobal

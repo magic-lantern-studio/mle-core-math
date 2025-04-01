@@ -53,7 +53,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}</ProjectGuid>
     <RootNamespace>mlmath</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Float Debug|Win32'" Label="Configuration">
@@ -219,6 +219,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Float Debug|Win32'">
     <TargetName>mlmathd</TargetName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Float Release|x64'">
+    <TargetName>mlmath</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Fixed Release|Win32'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -265,12 +268,13 @@ xcopy /Y  ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ML_MATH_DEBUG=0;ML_FIXED_POINT=1;MLE_NOT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ML_MATH_DEBUG=0;ML_FIXED_POINT=1;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeaderOutputFile>$(Platform)\$(Configuration)/mlmath.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
       <AssemblerListingLocation>$(Platform)\$(Configuration)/</AssemblerListingLocation>
       <ObjectFileName>$(Platform)\$(Configuration)/</ObjectFileName>
       <ProgramDataBaseFileName>$(Platform)\$(Configuration)/</ProgramDataBaseFileName>
@@ -341,10 +345,11 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ML_DEBUG;ML_MATH_DEBUG=1;ML_FIXED_POINT=0;MLE_NOT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ML_DEBUG;ML_MATH_DEBUG=1;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
-      <PrecompiledHeaderOutputFile>$(Platform)\$(Configuration)/mlmath.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
       <AssemblerListingLocation>$(Platform)\$(Configuration)/</AssemblerListingLocation>
       <ObjectFileName>$(Platform)\$(Configuration)/</ObjectFileName>
       <ProgramDataBaseFileName>$(Platform)\$(Configuration)/</ProgramDataBaseFileName>
@@ -416,10 +421,11 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ML_DEBUG;ML_MATH_DEBUG=1;ML_FIXED_POINT=1;MLE_NOT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ML_DEBUG;ML_MATH_DEBUG=1;ML_FIXED_POINT=1;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
-      <PrecompiledHeaderOutputFile>$(Platform)\$(Configuration)/mlmath.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
       <AssemblerListingLocation>$(Platform)\$(Configuration)/</AssemblerListingLocation>
       <ObjectFileName>$(Platform)\$(Configuration)/</ObjectFileName>
       <ProgramDataBaseFileName>$(Platform)\$(Configuration)/</ProgramDataBaseFileName>
@@ -494,12 +500,13 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ML_MATH_DEBUG=0;ML_FIXED_POINT=0;MLE_NOT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ML_MATH_DEBUG=0;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeaderOutputFile>$(Platform)\$(Configuration)/mlmath.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
       <AssemblerListingLocation>$(Platform)\$(Configuration)/</AssemblerListingLocation>
       <ObjectFileName>$(Platform)\$(Configuration)/</ObjectFileName>
       <ProgramDataBaseFileName>$(Platform)\$(Configuration)/</ProgramDataBaseFileName>
@@ -573,16 +580,19 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ML_CDECL;ML_MATH_DEBUG=0;ML_FIXED_POINT=0;MLE_NOT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ML_CDECL;ML_MATH_DEBUG=0;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeaderOutputFile>$(Platform)\$(Configuration)\mlmath.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
       <AssemblerListingLocation>$(Platform)\$(Configuration)\</AssemblerListingLocation>
       <ObjectFileName>$(Platform)\$(Configuration)\</ObjectFileName>
       <ProgramDataBaseFileName>$(Platform)\$(Configuration)\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeaderFile />
     </ClCompile>
     <ResourceCompile>
       <Culture>0x0409</Culture>
@@ -599,6 +609,8 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Message>Install Libraries</Message>
       <Command>mkdir $(MLE_HOME)\lib64\tools
 copy "x64\Tools Float Release\mlmath.lib" $(MLE_HOMe)\lib64\tools\mlmath.lib
+mkdir $(MLE_HOME)\lib64\rehearsal
+copy "x64\Tools Float Release\mlmath.lib" $(MLE_HOMe)\lib64\rehearsal\mlmath.lib
 mkdir $(MLE_HOME)\lib64\runtime\cdecl
 copy "x64\Tools Float Release\mlmath.lib" $(MLE_HOMe)\lib64\runtime\cdecl\mlmath.lib
 mkdir $(MLE_HOME)\include\math
@@ -649,15 +661,18 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ML_DEBUG;ML_CDECL;ML_MATH_DEBUG=1;ML_FIXED_POINT=0;MLE_NOT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ML_DEBUG;ML_CDECL;ML_MATH_DEBUG=1;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PrecompiledHeaderOutputFile>$(Platform)\$(Configuration)\mlmath.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
       <AssemblerListingLocation>$(Platform)\$(Configuration)\</AssemblerListingLocation>
       <ObjectFileName>$(Platform)\$(Configuration)\</ObjectFileName>
       <ProgramDataBaseFileName>$(Platform)\$(Configuration)\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeaderFile />
     </ClCompile>
     <ResourceCompile>
       <Culture>0x0409</Culture>
@@ -674,6 +689,8 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Message>Install Libraries</Message>
       <Command>mkdir $(MLE_HOME)\lib64\tools
 copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_HOME)\lib64\tools\mlmathd.lib
+mkdir $(MLE_HOME)\lib64\rehearsal
+copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_HOME)\lib64\rehearsal\mlmathd.lib
 mkdir $(MLE_HOME)\lib64\runtime\cdecl
 copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_HOME)\lib64\runtime\cdecl\mlmathd.lib
 mkdir $(MLE_HOME)\include\math
