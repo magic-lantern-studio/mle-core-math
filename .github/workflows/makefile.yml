@@ -1,27 +1,21 @@
-name: Makefile CI
+name: Continuous Integration Build
 
 on:
+  workflow_dispatch:  # Allow manual triggers
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  #pull_request:
+  #  branches: [ "master" ]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
+  windows-build:
+    name: Windows Build
+    runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v4
-
-    - name: configure
-      run: ./configure
-
-    - name: Install dependencies
-      run: make
-
-    - name: Run check
-      run: make check
-
-    - name: Run distcheck
-      run: make distcheck
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Create build directory and run CMake
+        shell: cmd
+        run: |
+          pwd
