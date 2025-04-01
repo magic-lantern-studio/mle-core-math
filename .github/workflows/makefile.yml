@@ -21,7 +21,7 @@ jobs:
             msbuild-architecture: x64
       - uses: GuillaumeFalourd/setup-windows10-sdk-action@v2.4
         with:
-            sdk-version: 15063
+            sdk-version: 17763
       - name: Build with msbuild
         shell: cmd
         run: |
