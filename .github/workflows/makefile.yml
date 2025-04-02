@@ -16,9 +16,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Add msbuild to Path
-        uses: microsoft/setup-msbuild@v1
+        uses: microsoft/setup-msbuild@v2
         with:
             msbuild-architecture: x64
+            vs-version: '[15.9)'
       - uses: GuillaumeFalourd/setup-windows10-sdk-action@v2.4
         with:
             sdk-version: 17763
