@@ -19,14 +19,11 @@ jobs:
         uses: microsoft/setup-msbuild@v2
         with:
             msbuild-architecture: x64
-            vs-version: '[15.8,15.9)'
       - uses: GuillaumeFalourd/setup-windows10-sdk-action@v2.4
         with:
-            sdk-version: 17763
+            sdk-version: 20348
       - name: Build with msbuild
         shell: cmd
         run: |
-          cd math\win32\build\msvc15 
-          #pwd
-          #dir
+          cd math\win32\build\msvc17
           msbuild mlmath.sln /p:Configuration=Debug /p:Platform=x64
