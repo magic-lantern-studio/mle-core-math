@@ -7,6 +7,9 @@ on:
   #pull_request:
   #  branches: [ "master" ]
 
+env:
+  MLE_ROOT: C:\opt\MagicLantern
+  
 jobs:
   windows-build:
     name: Windows Build
