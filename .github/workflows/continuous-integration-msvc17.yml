@@ -28,8 +28,12 @@ jobs:
       - name: Install dependencies
         shell: cmd
         run: |
+          mkdir %MLE_ROOT%
           cd %MLE_ROOT%
           curl -k -LO https://github.com/magic-lantern-studio/mle-ci/releases/download/mlutil-msvc17-latest/mlutil.zip
+          7a x mlutil.zip
+          pwd
+          dir
       - name: Build with msbuild
         shell: cmd
         run: |
