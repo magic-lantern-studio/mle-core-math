@@ -25,14 +25,16 @@ jobs:
       - uses: GuillaumeFalourd/setup-windows10-sdk-action@v2.4
         with:
             sdk-version: 20348
+      - uses: milliewalky/setup-7-zip@v2
       - name: Install dependencies
         shell: cmd
         run: |
           mkdir %MLE_ROOT%
           cd %MLE_ROOT%
           pwd
+          dir
           curl -k -LO https://github.com/magic-lantern-studio/mle-ci/releases/download/mlutil-msvc17-latest/mlutil.zip
-          7za x mlutil.zip
+          7z x mlutil.zip
       - name: Build with msbuild
         shell: cmd
         run: |
