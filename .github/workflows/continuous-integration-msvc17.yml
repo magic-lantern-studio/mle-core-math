@@ -30,11 +30,8 @@ jobs:
         shell: cmd
         run: |
           mkdir %MLE_ROOT%
-          cd %MLE_ROOT%
-          pwd
-          dir
           curl -k -LO https://github.com/magic-lantern-studio/mle-ci/releases/download/mlutil-msvc17-latest/mlutil.zip
-          7z x mlutil.zip
+          7z x mlutil.zip -o%MLE_ROOT%
       - name: Build with msbuild
         shell: cmd
         run: |
