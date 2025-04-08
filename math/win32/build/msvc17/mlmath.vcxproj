@@ -295,10 +295,10 @@ xcopy /Y  ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     </Bscmake>
     <PostBuildEvent>
       <Message>Install Libraries</Message>
-      <Command>mkdir $(MLE_HOME)\lib64\runtime\stdcall
-copy "x64\Fixed Release\mlfmath.lib" $(MLE_HOME)\lib64\runtime\stdcall\mlfmath.lib
-mkdir $(MLE_HOME)\include\math
-xcopy /Y  ..\..\..\common\include\math\* $(MLE_HOME)\include\math
+      <Command>mkdir $(MLE_ROOT)\lib64\runtime\stdcall
+copy "x64\Fixed Release\mlfmath.lib" $(MLE_ROOT)\lib64\runtime\stdcall\mlfmath.lib
+mkdir $(MLE_ROOT)\include\math
+xcopy /Y  ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -371,10 +371,10 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     </Bscmake>
     <PostBuildEvent>
       <Message>Install Libraries</Message>
-      <Command>mkdir $(MLE_HOME)\lib64\runtime\stdcall
-copy "x64\Float Debug\mlmathd.lib" $(MLE_HOME)\lib64\runtime\stdcall\mlmathd.lib
-mkdir $(MLE_HOME)\include\math
-xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
+      <Command>mkdir $(MLE_ROOT)\lib64\runtime\stdcall
+copy "x64\Float Debug\mlmathd.lib" $(MLE_ROOT)\lib64\runtime\stdcall\mlmathd.lib
+mkdir $(MLE_ROOT)\include\math
+xcopy /Y ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -447,10 +447,10 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     </Bscmake>
     <PostBuildEvent>
       <Message>Install Libraries</Message>
-      <Command>mkdir $(MLE_HOME)\lib64\runtime\stdcall
-copy "x64\Fixed Debug\mlfmathd.lib" $(MLE_HOME)\lib64\runtime\stdcall\mlfmathd.lib
-mkdir $(MLE_HOME)\include\math
-xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
+      <Command>mkdir $(MLE_ROOT)\lib64\runtime\stdcall
+copy "x64\Fixed Debug\mlfmathd.lib" $(MLE_ROOT)\lib64\runtime\stdcall\mlfmathd.lib
+mkdir $(MLE_ROOT)\include\math
+xcopy /Y ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -527,10 +527,10 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     </Bscmake>
     <PostBuildEvent>
       <Message>Install Libraries</Message>
-      <Command>mkdir $(MLE_HOME)\lib64\runtime\stdcall
-copy "x64\Float Release\mlmath.lib" $(MLE_HOME)\lib64\runtime\stdcall\mlmath.lib
-mkdir $(MLE_HOME)\include\math
-xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
+      <Command>mkdir $(MLE_ROOT)\lib64\runtime\stdcall
+copy "x64\Float Release\mlmath.lib" $(MLE_ROOT)\lib64\runtime\stdcall\mlmath.lib
+mkdir $(MLE_ROOT)\include\math
+xcopy /Y ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -607,14 +607,14 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     </Bscmake>
     <PostBuildEvent>
       <Message>Install Libraries</Message>
-      <Command>mkdir $(MLE_HOME)\lib64\tools
-copy "x64\Tools Float Release\mlmath.lib" $(MLE_HOMe)\lib64\tools\mlmath.lib
-mkdir $(MLE_HOME)\lib64\rehearsal
-copy "x64\Tools Float Release\mlmath.lib" $(MLE_HOMe)\lib64\rehearsal\mlmath.lib
-mkdir $(MLE_HOME)\lib64\runtime\cdecl
-copy "x64\Tools Float Release\mlmath.lib" $(MLE_HOMe)\lib64\runtime\cdecl\mlmath.lib
-mkdir $(MLE_HOME)\include\math
-xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
+      <Command>mkdir $(MLE_ROOT)\lib64\tools
+copy "x64\Tools Float Release\mlmath.lib" $(MLE_ROOT)\lib64\tools\mlmath.lib
+mkdir $(MLE_ROOT)\lib64\rehearsal
+copy "x64\Tools Float Release\mlmath.lib" $(MLE_ROOT)\lib64\rehearsal\mlmath.lib
+mkdir $(MLE_ROOT)\lib64\runtime\cdecl
+copy "x64\Tools Float Release\mlmath.lib" $(MLE_ROOT)\lib64\runtime\cdecl\mlmath.lib
+mkdir $(MLE_ROOT)\include\math
+xcopy /Y ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -687,14 +687,14 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     </Bscmake>
     <PostBuildEvent>
       <Message>Install Libraries</Message>
-      <Command>mkdir $(MLE_HOME)\lib64\tools
-copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_HOME)\lib64\tools\mlmathd.lib
-mkdir $(MLE_HOME)\lib64\rehearsal
-copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_HOME)\lib64\rehearsal\mlmathd.lib
-mkdir $(MLE_HOME)\lib64\runtime\cdecl
-copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_HOME)\lib64\runtime\cdecl\mlmathd.lib
-mkdir $(MLE_HOME)\include\math
-xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
+      <Command>mkdir $(MLE_ROOT)\lib64\tools
+copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_ROOT)\lib64\tools\mlmathd.lib
+mkdir $(MLE_ROOT)\lib64\rehearsal
+copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_ROOT)\lib64\rehearsal\mlmathd.lib
+mkdir $(MLE_ROOT)\lib64\runtime\cdecl
+copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_ROOT)\lib64\runtime\cdecl\mlmathd.lib
+mkdir $(MLE_ROOT)\include\math
+xcopy /Y ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>

@@ -247,12 +247,12 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     </Bscmake>
     <PostBuildEvent>
       <Message>Install DLL</Message>
-      <Command>mkdir $(MLE_HOME)\bin64\rehearsal
-copy x64\Release\mlmath.dll $(MLE_HOME)\bin64\rehearsal\mlmath.dll
-mkdir $(MLE_HOME)\lib64\rehearsal
-copy x64\Release\mlmath.lib $(MLE_HOME)\lib64\rehearsal\mlmath.lib
-mkdir $(MLE_HOME)\include\math
-xcopy /Y  ..\..\..\common\include\math\* $(MLE_HOME)\include\math
+      <Command>mkdir $(MLE_ROOT)\bin64\rehearsal
+copy x64\Release\mlmath.dll $(MLE_ROOT)\bin64\rehearsal\mlmath.dll
+mkdir $(MLE_ROOT)\lib64\rehearsal
+copy x64\Release\mlmath.lib $(MLE_ROOT)\lib64\rehearsal\mlmath.lib
+mkdir $(MLE_ROOT)\include\math
+xcopy /Y  ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -302,12 +302,12 @@ xcopy /Y  ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     </Bscmake>
     <PostBuildEvent>
       <Message>Install DLL</Message>
-      <Command>mkdir $(MLE_HOME)\bin64\rehearsal
-copy x64\Debug\mlmathd.dll $(MLE_HOME)\bin64\rehearsal\mlmathd.dll
-mkdir $(MLE_HOME)\lib64\rehearsal
-copy x64\Debug\mlmathd.lib $(MLE_HOME)\lib64\rehearsal\mlmathd.lib
-mkdir $(MLE_HOME)\include\math
-xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
+      <Command>mkdir $(MLE_ROOT)\bin64\rehearsal
+copy x64\Debug\mlmathd.dll $(MLE_ROOT)\bin64\rehearsal\mlmathd.dll
+mkdir $(MLE_ROOT)\lib64\rehearsal
+copy x64\Debug\mlmathd.lib $(MLE_ROOT)\lib64\rehearsal\mlmathd.lib
+mkdir $(MLE_ROOT)\include\math
+xcopy /Y ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
