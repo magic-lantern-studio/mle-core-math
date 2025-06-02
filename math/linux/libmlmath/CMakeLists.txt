@@ -49,6 +49,8 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 set(CMAKE_DEBUG_POSTFIX "d")
 
 # Fail early if one of the required packages cannot be found
+include(FindMLUTIL)
+find_package(MLUTIL REQUIRED)
 find_package(PkgConfig REQUIRED)
 
 # Check for Magic Lantern environment variables
