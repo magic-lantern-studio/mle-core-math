@@ -61,13 +61,6 @@ else()
   set(ENV{MLE_ROOT} "/opt/MagicLantern")
   message(STATUS "Using " $ENV{MLE_ROOT})
 endif()
-if (DEFINED ENV{MLE_WORKPRINTS})
-  message(STATUS "MLE_WORKPRINTS=" $ENV{MLE_WORKPRINTS})
-else()
-  message(STATUS "MLE_WORKPRINTS NOT SET")
-  set(ENV{MLE_ROOT} "/opt/MagicLantern/include/workprints")
-  message(STATUS "Using " $ENV{MLE_WORKPRINTS})
-endif()
 
 # Specify the library
 

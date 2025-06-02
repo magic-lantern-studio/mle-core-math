@@ -17,16 +17,12 @@ find_path(
 find_library(
   MLUTIL_LIBRARY_DEBUG
   NAMES mlutild
-  PATHS $ENV{MLE_ROOT}/lib
-  PATH_SUFFIXES mle
-  )
+  PATHS $ENV{MLE_ROOT}/lib)
 
 find_library(
   MLUTIL_LIBRARY_RELEASE
   NAMES mlutil
-  PATHS $ENV{MLE_ROOT}/lib
-  PATH_SUFFIXES mle
-  )
+  PATHS $ENV{MLE_ROOT}/lib)
 
 select_library_configurations(MLUTIL)
 
