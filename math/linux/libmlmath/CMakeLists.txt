@@ -161,7 +161,7 @@ add_library(
       ../../common/include/math/trig.h
       ../../common/include/math/vector.h
     DESTINATION
-      include/mle
+      include/math
   )
 
   # Uninstall libraries and header files
