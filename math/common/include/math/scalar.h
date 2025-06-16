@@ -46,7 +46,7 @@
 //
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2022 Wizzer Works
+// Copyright (c) 2015-2025 Wizzer Works
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -81,7 +81,7 @@
 // Include Magic Lantern math header files.
 #include <math/mlmath.h>
 
-#if defined(WIN32)
+#if defined(_WINDOWS)
 // Defined ML_CDECL if a __cdecl calling convention is desired.
 #if defined(ML_CDECL)
 #define ML_MATH_STDCALL MLMATH_API
@@ -116,7 +116,7 @@
 #if !defined(ML_FIXED_POINT)
 #if defined(__linux__) || defined(__APPLE__)
 #define ML_FIXED_POINT 0      // default for Linux and MAcOS is not FIXED
-#elif defined(WIN32)    
+#elif defined(_WINDOWS)    
 #define ML_FIXED_POINT 1      // default for PC is FIXED
 #elif defined(psx)   
 #define ML_FIXED_POINT 1      // default for PSX is FIXED

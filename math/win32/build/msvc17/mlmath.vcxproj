@@ -268,7 +268,7 @@ xcopy /Y  ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ML_MATH_DEBUG=0;ML_FIXED_POINT=1;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;ML_MATH_DEBUG=0;ML_FIXED_POINT=1;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
@@ -345,7 +345,7 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ML_DEBUG;ML_MATH_DEBUG=1;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;ML_DEBUG;ML_MATH_DEBUG=1;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
       <PrecompiledHeaderOutputFile>
@@ -421,7 +421,7 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ML_DEBUG;ML_MATH_DEBUG=1;ML_FIXED_POINT=1;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;ML_DEBUG;ML_MATH_DEBUG=1;ML_FIXED_POINT=1;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
       <PrecompiledHeaderOutputFile>
@@ -500,7 +500,7 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ML_MATH_DEBUG=0;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;ML_MATH_DEBUG=0;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
@@ -580,7 +580,7 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ML_CDECL;ML_MATH_DEBUG=0;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;ML_CDECL;ML_MATH_DEBUG=0;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -661,7 +661,7 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ML_DEBUG;ML_CDECL;ML_MATH_DEBUG=1;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;ML_DEBUG;ML_CDECL;ML_MATH_DEBUG=1;ML_FIXED_POINT=0;MLE_NOT_MATH_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
