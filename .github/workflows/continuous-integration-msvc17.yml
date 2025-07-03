@@ -29,7 +29,7 @@ jobs:
           mkdir %MLE_ROOT%
           curl -k -LO https://github.com/magic-lantern-studio/mle-ci/releases/download/mlutil-msvc17-latest/mlutil-release.zip
           7z x mlutil-release.zip -o%MLE_ROOT%
-          dir %MLE_ROOT%\MagicLantern
+          dir %MLE_ROOT%
       - name: Build with msbuild
         shell: cmd
         run: |
