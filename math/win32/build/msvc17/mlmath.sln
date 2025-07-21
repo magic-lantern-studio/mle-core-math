@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36202.13 d17.14
+VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mlmath", "mlmath.vcxproj", "{03CDCEE0-3D5A-4713-9D13-BE5CBDC3BBA9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mlmath_DLL", "mlmath_DLL.vcxproj", "{9CCCE102-5187-483D-B1A9-371488F52898}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "mlmath_package", "mlmath_package\mlmath_package.vdproj", "{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "mlmath_debug_package", "mlmath_debug_package\mlmath_debug_package.vdproj", "{1DB0FB51-1801-887B-775E-78251C1F3DCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,22 @@ Global
 		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Tools Float Debug|x64.ActiveCfg = Release
 		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Tools Float Release|Win32.ActiveCfg = Release
 		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Tools Float Release|x64.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Debug|Win32.ActiveCfg = Debug
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Debug|x64.ActiveCfg = Debug
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Fixed Debug|Win32.ActiveCfg = Debug
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Fixed Debug|x64.ActiveCfg = Debug
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Fixed Release|Win32.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Fixed Release|x64.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Float Debug|Win32.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Float Debug|x64.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Float Release|Win32.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Float Release|x64.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Release|Win32.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Release|x64.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Tools Float Debug|Win32.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Tools Float Debug|x64.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Tools Float Release|Win32.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Tools Float Release|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
