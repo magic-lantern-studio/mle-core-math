@@ -126,13 +126,15 @@ Global
 		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Float Release|Win32.ActiveCfg = Release
 		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Float Release|x64.ActiveCfg = Release
 		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Release|Win32.ActiveCfg = Release
-		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Release|x64.ActiveCfg = Release
+		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Release|x64.ActiveCfg = Tools Float Release
 		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Tools Float Debug|Win32.ActiveCfg = Release
 		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Tools Float Debug|x64.ActiveCfg = Release
 		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Tools Float Release|Win32.ActiveCfg = Release
-		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Tools Float Release|x64.ActiveCfg = Release
+		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Tools Float Release|x64.ActiveCfg = Tools Float Release
+		{A015AE63-9FFB-39F1-FC2B-246B90BACDAB}.Tools Float Release|x64.Build.0 = Tools Float Release
 		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Debug|Win32.ActiveCfg = Debug
-		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Debug|x64.ActiveCfg = Debug
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Debug|x64.ActiveCfg = Tools Float Debug
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Debug|x64.Build.0 = Tools Float Debug
 		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.DSO Debug|Win32.ActiveCfg = Release
 		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.DSO Debug|Win32.Build.0 = Release
 		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.DSO Debug|x64.ActiveCfg = Release
@@ -152,7 +154,8 @@ Global
 		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Release|Win32.ActiveCfg = Release
 		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Release|x64.ActiveCfg = Release
 		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Tools Float Debug|Win32.ActiveCfg = Release
-		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Tools Float Debug|x64.ActiveCfg = Release
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Tools Float Debug|x64.ActiveCfg = Tools Float Debug
+		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Tools Float Debug|x64.Build.0 = Tools Float Debug
 		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Tools Float Release|Win32.ActiveCfg = Release
 		{1DB0FB51-1801-887B-775E-78251C1F3DCF}.Tools Float Release|x64.ActiveCfg = Release
 	EndGlobalSection
