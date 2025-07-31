@@ -21,6 +21,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_23161478D72B45C3A4DA9E9AA29CB418"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2A495906720745F18E0EF98A3F93C030"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_2F1A364FA5CA487A9331B5B67D053144"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -94,6 +106,12 @@
         "Entry"
         {
         "MsmKey" = "8:_C247670CA8464B4C96F4809298A51F08"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CC808307E5724728B387C3E4D3A0127D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -197,6 +215,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -224,6 +250,46 @@
             "TargetName" = "8:rotation.h"
             "Tag" = "8:"
             "Folder" = "8:_E64AF024C6C74F2F9E0E4132671550E4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_23161478D72B45C3A4DA9E9AA29CB418"
+            {
+            "SourcePath" = "8:..\\x64\\Tools Float Debug\\mlmathd.lib"
+            "TargetName" = "8:mlmathd.lib"
+            "Tag" = "8:"
+            "Folder" = "8:_830FCB100625473786D2045476268D86"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2A495906720745F18E0EF98A3F93C030"
+            {
+            "SourcePath" = "8:..\\x64\\Tools Float Debug\\mlmathd.lib"
+            "TargetName" = "8:mlmathd.lib"
+            "Tag" = "8:"
+            "Folder" = "8:_5D2DA1564E604E3788CDAD2E753BEFC5"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -484,6 +550,26 @@
             "TargetName" = "8:scalar.h"
             "Tag" = "8:"
             "Folder" = "8:_E64AF024C6C74F2F9E0E4132671550E4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CC808307E5724728B387C3E4D3A0127D"
+            {
+            "SourcePath" = "8:..\\x64\\Tools Float Debug\\mlmathd.lib"
+            "TargetName" = "8:mlmathd.lib"
+            "Tag" = "8:"
+            "Folder" = "8:_1885037500F740ACAF1EBF0BC0CFBC46"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
