@@ -2,7 +2,7 @@
   <?if $(var.Configuration) = Debug ?>
 	<!-- Debug Package -->
     <Package Id="wizzer.magiclantern.mlmathd_wix_package"
-		     Name="mlmathd"
+		     Name="Magic Lantern SDK mlmathd"
 		     Manufacturer="WizzerWorks"
 		     Version="1.0.0.0">
       <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
@@ -14,7 +14,7 @@
   <?else?>
 	<!-- Release Package -->
 	<Package Id="wizzer.magiclantern.mlmath_wix_package"
-		     Name="mlmath"
+		     Name="Magic Lantern SDK mlmath"
 		     Manufacturer="WizzerWorks"
 		     Version="1.0.0.0">
 	  <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
