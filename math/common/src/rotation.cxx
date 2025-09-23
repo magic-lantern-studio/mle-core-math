@@ -306,7 +306,7 @@ MlRotation& MlRotation::setValue(const MlTransform& m)
 #if ML_FIXED_POINT
             if (mlAbs(m[i][j]-check[i][j]) > mlFloatToScalar(1.0e-1))
 #else
-            if (mlAbs(m[i][j]-check[i][j]) > mlFloatToScalar(1.0e-5))
+            if (mlAbs(m[i][j]-check[i][j]) > mlFloatToScalar(static_cast<float>(1.0e-5)))
 #endif
                 ok = FALSE;
         }

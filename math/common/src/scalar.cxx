@@ -125,5 +125,5 @@ mlFixedToFloat(long val)
 long 
 mlFloatToFixed(float f)
 {
-    return f * ML_FIXED_SCALE;
+    return static_cast<long>(f * ML_FIXED_SCALE);
 }

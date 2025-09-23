@@ -1154,7 +1154,13 @@ mlReciprocal( const MlScalar x )
 #if ML_FIXED_POINT
     return FixedReciprocal(x);
 #else
-    return mlFloatToScalar(1.0f / mlScalarToFloat(x));
+    // Check for divide by zero.
+    if (x == ML_SCALAR_ZERO) {
+        // ToDo: Print a warning message here.
+        return ML_SCALAR_ZERO;
+    } else {
+        return mlFloatToScalar(1.0f / mlScalarToFloat(x));
+    }
 #endif
 }
 
