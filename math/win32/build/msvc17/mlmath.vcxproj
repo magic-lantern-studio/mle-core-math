@@ -609,8 +609,6 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Message>Install Libraries</Message>
       <Command>mkdir $(MLE_ROOT)\lib64\tools
 copy "x64\Tools Float Release\mlmath.lib" $(MLE_ROOT)\lib64\tools\mlmath.lib
-mkdir $(MLE_ROOT)\lib64\runtime\cdecl
-copy "x64\Tools Float Release\mlmath.lib" $(MLE_ROOT)\lib64\runtime\cdecl\mlmath.lib
 mkdir $(MLE_ROOT)\include\math
 xcopy /Y ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
@@ -687,8 +685,6 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Message>Install Libraries</Message>
       <Command>mkdir $(MLE_ROOT)\lib64\tools
 copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_ROOT)\lib64\tools\mlmathd.lib
-mkdir $(MLE_ROOT)\lib64\runtime\cdecl
-copy "x64\Tools Float Debug\mlmathd.lib" $(MLE_ROOT)\lib64\runtime\cdecl\mlmathd.lib
 mkdir $(MLE_ROOT)\include\math
 xcopy /Y ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>

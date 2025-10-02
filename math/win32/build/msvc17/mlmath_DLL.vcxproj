@@ -216,7 +216,7 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>ML_MATH_DEBUG=0;ML_FIXED_POINT=0;NDEBUG;_WINDOWS;_USRDLL;MLMATH_EXPORTS;MLE_MAKE_DLL;ML_CDECL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ML_MATH_DEBUG=0;ML_FIXED_POINT=0;MLMATH_EXPORTS;MLE_MAKE_DLL;ML_CDECL;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -251,6 +251,10 @@ xcopy /Y ..\..\..\common\include\math\* $(MLE_HOME)\include\math
 copy x64\Release\mlmath.dll $(MLE_ROOT)\bin64\rehearsal\mlmath.dll
 mkdir $(MLE_ROOT)\lib64\rehearsal
 copy x64\Release\mlmath.lib $(MLE_ROOT)\lib64\rehearsal\mlmath.lib
+mkdir $(MLE_ROOT)\bin64\runtime\cdecl
+copy x64\Release\mlmath.dll $(MLE_ROOT)\bin64\runtime\cdecl\mlmath.dll
+mkdir $(MLE_ROOT)\lib64\runtime\cdecl
+copy x64\Release\mlmath.lib $(MLE_ROOT)\lib64\runtime\cdecl\mlmath.lib
 mkdir $(MLE_ROOT)\include\math
 xcopy /Y  ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
@@ -269,7 +273,7 @@ xcopy /Y  ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\common\include;$(MLE_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>ML_DEBUG;ML_MATH_DEBUG=1;ML_FIXED_POINT=0;_DEBUG;_WINDOWS;_USRDLL;MLMATH_EXPORTS;MLE_MAKE_DLL;ML_CDECL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ML_DEBUG;ML_MATH_DEBUG=1;ML_FIXED_POINT=0;MLMATH_EXPORTS;MLE_MAKE_DLL;ML_CDECL;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -306,6 +310,10 @@ xcopy /Y  ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 copy x64\Debug\mlmathd.dll $(MLE_ROOT)\bin64\rehearsal\mlmathd.dll
 mkdir $(MLE_ROOT)\lib64\rehearsal
 copy x64\Debug\mlmathd.lib $(MLE_ROOT)\lib64\rehearsal\mlmathd.lib
+mkdir $(MLE_ROOT)\bin64\runtime\cdecl
+copy x64\Debug\mlmathd.dll $(MLE_ROOT)\bin64\runtime\cdecl\mlmathd.dll
+mkdir $(MLE_ROOT)\lib64\runtime\cdecl
+copy x64\Debug\mlmathd.lib $(MLE_ROOT)\lib64\runtime\cdecl\mlmathd.lib
 mkdir $(MLE_ROOT)\include\math
 xcopy /Y ..\..\..\common\include\math\* $(MLE_ROOT)\include\math
 </Command>
