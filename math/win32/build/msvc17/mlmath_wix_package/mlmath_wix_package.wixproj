@@ -1,4 +1,8 @@
-﻿<Project Sdk="WixToolset.Sdk/6.0.1">
+﻿<Project Sdk="WixToolset.Sdk/6.0.2">
+  <PropertyGroup>
+	<Configurations>Debug;Release;Tools Float Debug;Tools Float Release</Configurations>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\mlmath.vcxproj" />
   </ItemGroup>
