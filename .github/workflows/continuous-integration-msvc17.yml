@@ -22,14 +22,16 @@ jobs:
         uses: microsoft/setup-msbuild@v2
         with:
             msbuild-architecture: x64
-      - uses: milliewalky/setup-7-zip@v2
-      - name: Install dependencies
+      # Download the latest mle-core-util artifact (libraries and headers)
+      # produced by its Windows workflow into %MLE_ROOT%.
+      - name: Download mle-core-util artifacts
         shell: cmd
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           mkdir %MLE_ROOT%
-          curl -k -LO https://github.com/magic-lantern-studio/mle-ci/releases/download/mlutil-msvc17-latest/mlutil-release.zip
-          7z x mlutil-release.zip -o%MLE_ROOT%
-          dir %MLE_ROOT%
+          gh run download --repo magic-lantern-studio/mle-core-util --name mle-core-util-windows-Release --dir %MLE_ROOT%
+          dir /s /b %MLE_ROOT%
       - name: Build with msbuild
         shell: cmd
         run: |
