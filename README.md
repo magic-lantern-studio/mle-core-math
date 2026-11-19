@@ -15,8 +15,8 @@ Actions CI for Ubuntu 24.04 LTS 64-bit:
 </a>
 
 Actions CI for Visual Studio 2022
-<a href="https://github.com/magic-lantern-studio/mle-core-math/actions/workflows/continuous-integration-msvc17.yml">
-  <img src="https://github.com/magic-lantern-studio/mle-core-math/actions/workflows/continuous-integration-msvc17.yml/badge.svg" alt="Windows build">
+<a href="https://github.com/magic-lantern-studio/mle-core-math/actions/workflows/continuous-integration-windows-msvc17.yml">
+  <img src="https://github.com/magic-lantern-studio/mle-core-math/actions/workflows/continuous-integration-windows-msvc17.yml/badge.svg" alt="Windows build">
 </a>
 
 # Documentation
