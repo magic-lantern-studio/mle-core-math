@@ -37,3 +37,8 @@ jobs:
         run: |
           cd math\win32\build\msvc17
           msbuild mlmath.sln /p:Configuration=Release /p:Platform=x64
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mle-core-math-windows-Release
+          path: ${{ env.MLE_ROOT }}
