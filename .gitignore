@@ -1,3 +1,5 @@
+## Linux autoconf
+
 **/Makefile
 **/Makefile.in
 **/.libs
@@ -19,3 +21,8 @@
 **/ltmain.sh
 **/depcomp
 **/exampleProgram
+
+## Linus CMake
+
+**/libmlmath_release
+**/libmlmath_debug
