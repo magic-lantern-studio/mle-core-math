@@ -9,13 +9,11 @@ floating-point and fixed-point utility.
 Instructions for generating the API documentation can be found on the [Math Library wiki](https://github.com/magic-lantern-studio/mle-documentation/wiki/Math-Library) page captured in the [mle-documentation Github project](https://github.com/magic-lantern-studio/mle-documentation).
 
 # Build Status
-  * Ubuntu 24.04 LTS:
-  <a href="https://github.com/magic-lantern-studio/mle-core-math/actions/workflows/continuous-integration-ubuntu-24.04.yml">
+  * Ubuntu 24.04 LTS: <a href="https://github.com/magic-lantern-studio/mle-core-math/actions/workflows/continuous-integration-ubuntu-24.04.yml">
   <img src="https://github.com/magic-lantern-studio/mle-core-math/actions/workflows/continuous-integration-ubuntu-24.04.yml/badge.svg" alt="Ubuntu 24.04 build">
 </a>
 
-  * Windows 11:
-  <a href="https://github.com/magic-lantern-studio/mle-core-math/actions/workflows/continuous-integration-msvc17.yml">
+  * Windows 11: <a href="https://github.com/magic-lantern-studio/mle-core-math/actions/workflows/continuous-integration-msvc17.yml">
   <img src="https://github.com/magic-lantern-studio/mle-core-math/actions/workflows/continuous-integration-msvc17.yml/badge.svg" alt="Windows build">
 </a>
 
